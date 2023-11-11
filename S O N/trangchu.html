@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <title>Trang Chủ</title>
 </head>
 <body>
@@ -55,53 +56,60 @@
         <script type="text/javascript" src="main.js"></script>
 
         <div id="content">
-
-            <!-- <div id="search">
-                <div class="wraper">
-                    <div class="search-content-items row">
-                        <div class="search-content-item">
-                            <i class="fas fa-calendar-check"></i>
-                            <input type="text" placeholder="Ngày đặt phòng">
-                        </div>
-                        <div class="search-content-item">
-                            <i class="far fa-calendar-check"></i>
-                            <input type="text" placeholder="Ngày trả phòng">
-                        </div>
-                        <div class="search-content-item">
-                            <i class="fas fa-users"></i>
-                            <input type="text" placeholder="Số người">
-                        </div>
-                        <div class="search-content-item">
-                            <button>Tìm kiếm</button>
-                        </div>
-                    </div>
+            
+            <div id="search-box">
+                <div class="items">
+                    <i class="fas fa-calendar-check">Ngày nhận phòng:</i>
+                    <input type="date">
                 </div>
-            </div> -->
+                <div class="items">
+                    <i class="far fa-calendar-check"><strong>Ngày trả phòng:</strong></i>
+                    <input type="date">
+                </div>
+                <div class="items">
+                    <i class="fas fa-users">Số người:</i>
+                    <input type="number" placeholder="VD: 2">
+                </div>   
+
+                <div class="items">
+                    <button>Tìm kiếm</button> 
+                </div>
+            </div>
+
+            <script type="text/javascript" src="assets/main.js"></script>
 
             <div id="main-content">
                 <h1>Trải nghiệm hệ sinh thái Hydrangea</h1>
+                <div class="container">
+                    <div class="item">
+                        <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FthuGian.jpg?1698747320913" />
+                        <h2><a target="_blank" href="tintuc.html">Thư giãn  <i class="fas fa-link"></i></a></h2>
+                        <p>Thả lỏng cơ thể và ngắm hoàng hôn</p>
+                    </div>
+        
+                    <div class="item">
+                        <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FvuiChoi.jpg?1698740315986"/>
+                        <h2><a target="_blank" href="tintuc.html">Vui chơi  <i class="fas fa-link"></i></a></h2>
+                        <p>Trải nghiệm chèo thuyền trên hồ Tuyền Lâm</p>
+                    </div>
 
-                <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thuGian.jpg?v=1698740029265" width="500rem">
-                <h2>Thư giãn</h2>
-                <p>Thả lỏng cơ thể và ngắm hoàng hôn</p>
+                    <div class="item">
+                        <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FhoiHop.jpg?1698747324855"/>
+                        <h2><a target="_blank" href="tintuc.html">Hội họp và sự kiện  <i class="fas fa-link"></i></a></h2>
+                        <p>Không gian sự kiện đa chức năng cùng thiết bị tối tân</p>
+                    </div>
 
-
-                <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FvuiChoi.jpg?1698740315986" width="500rem"/>
-                <h2>Vui chơi</h2>
-                <p>Trải nghiệm chèo thuyền trên hồ Tuyền Lâm</p>
-
-                <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FhoiHop.jpg?1698740312811" width="500rem"/>
-                <h2>Hội họp và sự kiện</h2>
-                <p>Không gian sự kiện đa chức năng cùng thiết bị tối tân</p>
-
-                <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FvuonHoa.png?1698740319060" width="500rem">
-                <h2>Vườn hoa</h2>
-                <p>Khám phá vườn hoa cẩm tú cầu tuyệt đẹp - niềm kiêu hãnh của Hydrangea</p>
+                    <div class="item">
+                        <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/thumbnails%2FvuonHoa.png?1698747322183"/>
+                        <h2><a target="_blank" href="tintuc.html">Vườn hoa  <i class="fas fa-link"></i></a></h2>
+                        <p>Khám phá vườn hoa cẩm tú cầu tuyệt đẹp - niềm kiêu hãnh của Hydrangea</p>
+                    </div>                        
+                </div> 
             </div>
         </div>
 
         <div id="footer">
-            <div class="footer">
+                        <div class="footer">
                 <!-- Phần trên của footer -->
                 <div class="footer_up">
         
@@ -344,11 +352,8 @@
                                         </div>
                                     </div>
                                 </div>
-        
                             </div>
-        
                         </div>
-        
                     </div>
                 </div>
         
@@ -374,12 +379,11 @@
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
-        
                     </div>
                 </div>
             </div>
-                </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
