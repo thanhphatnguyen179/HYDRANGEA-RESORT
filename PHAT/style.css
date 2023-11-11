@@ -1,0 +1,307 @@
+:root{
+    --header-color: #abd641;
+    --body-color: #ffffff;
+    --footer-color: #7398d4;
+    --button-color:#65763a;
+    --button-hover-color:#7fa71c;
+    --text-color: #000000;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*                                   Bắt đầu CSS header */
+
+a{
+    text-decoration: none;
+}
+
+#header {
+    height: 20vh;
+    background-color: var(--header-color);
+    border: .1rem solid black;
+  }
+  
+  #header #header-container  {
+    padding: 1rem 10%;
+    display: left;
+    
+  }
+
+  #header #header-container #logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #header #header-container #navi {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header #header-container #navi a {
+    color: var(--text-color);
+  }
+
+
+
+
+/*                                        Kết thúc CSS header */
+
+
+
+
+/*                           Bắt đầu CSS FOOTER */
+
+.footer_up{
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+.footer_head{
+    display: flex;
+    height: 157px;
+}
+
+.footer_head_left{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.footer_head_right{
+    height: 42px;
+    width: 148px;
+    border: #000 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer_head_right:hover{
+    background-color: var(--button-hover-color);
+}
+
+.dt{
+    background-color: black;
+    height: 0.5px;
+    width: 90%;
+    position: relative;
+    left: 56px;
+    opacity: 0.2;
+}
+
+.footer_up_left{
+    margin-left: 50px;
+}
+
+.footer_up_container{
+    margin-top: 52px;
+    display: flex;
+}
+
+
+.footer_info_address{
+    color: black;
+    display: flex   ;
+}
+
+.footer_text_email{
+    color: #65763a;
+    text-decoration: none;
+}
+
+.footer_info_hotline{
+    display: flex;
+    color: #65763a;
+}
+
+.text_account,
+.footer_info_reg{
+    color: black;
+}
+
+.footer_info_address,
+.footer_info_email,
+.footer_info_hotline,
+.footer_info_account,
+.footer_info_reg,
+.confirmation {
+    margin-top: 15px;
+}
+
+.text_account,
+.text_reg{
+    font-size: 13px;
+}
+
+.icon-info{
+    color: #65763a;
+    margin-right: 12px;
+}
+
+.confirmation{
+    height: 37px;
+    width: 100px;
+}
+
+.logo{
+    position: relative;
+    bottom: 24px;
+    left: 60px;
+}
+
+.footer_logo{
+    height: 90px;
+    width: 90px;
+}
+
+.menu_item{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.menu_item_link{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_tilte{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.menu_item_link:hover{
+    color: var(--button-hover-color);
+}
+
+.footer_menu{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.qr_code{
+    display: flex;
+}
+
+.store{
+    display: flex;
+}
+
+.qr{
+    position: relative;
+    left: 150px;
+    top: 24px;
+}
+
+.qr_img{
+    height: 88px;
+    width: 92px;
+}
+
+.qr_text{
+    color: var(--button-color);
+    margin-left: 15px;
+}
+
+.store_img{
+    height: 37px;
+    width: 110px;
+    border-radius: 2px;
+}
+
+.store{
+    margin-top: 15px;
+}
+
+.chplay{
+    margin-left: 15px;
+}
+
+.notifi{
+    margin-top: 20px;
+}
+
+.footer_up{
+    padding-bottom: 30px;
+}
+
+.footer_up_right_up{
+    display: flex;
+}
+
+.footer_up_right_dow{
+    display: flex;
+}
+
+
+
+
+.footer_dow .container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0f2b;
+    height: 50px;
+    align-items: center;
+}
+
+.container_left_text{
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    right: 172px;
+}
+
+.container_link_right{
+    position: relative;
+    left: 140px;
+}
+
+.link_item{
+    text-decoration: none;
+    color: var(--button-color);
+    margin-right: 10px;
+}
+
+.link_item:hover{
+    color: var(--button-hover-color);
+}
+
+
+/*                          Kết thúc CSS FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
