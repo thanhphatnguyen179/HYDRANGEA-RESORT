@@ -1,322 +1,201 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
 <body>
-
     
-
-    <div id="header">
-        <div id="header-container">
-
-            <div id="logo">
-                <a href="00_trangChu.html">
-                        <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/logo-header.png?v=1698738655879"/>
-                </a>
-            
-            </div>
-
-            <div id="navi"> 
-                <a href="00_trangChu.html">TRANG CHỦ</a>
-                <a href="01_gioithieu.html">GIỚI THIỆU</a>
-                <a href="/phong-ngu.html">PHÒNG NGỦ</a>
-                <a href="/khuyen-mai.html">KHUYẾN MÃI</a>
-                <a href="/tin-tuc.html">TIN TỨC</a>
-                <a href="lienhe.html">LIÊN HỆ</a>
-            </div>
-
-        </div>
-      </div>
-
-
-
-    <!-- Footer -->
     <div class="footer">
-        <!-- Phần trên của footer -->
-        <div class="footer_up">
+        <div class="container-footer">
+            <div class="container-footer-up">
+                <div class="for-mobile">
+                    <h3>Tải ứng dụng My HYDRANGEA</h3>
 
-            <div class="footer_head">
-                <div class="footer_head_left">
-                    <h3 class="footer_head_left_title">Vinpearl Resort &amp; Spa Phu Quoc</h3>
-                    <p class="footer_head_left_text">
-                        Bai Dai Area, Ganh Dau Commune, Phu Quoc City, Kien Giang Province, Vietnam
-                    </p>
-                    <p class="footer_head_left_text">
-                        Email: res.VPRSPQ@vinpearl.com Tel: (+84) 297 3550 550
-                    </p>
-                </div>
-
-                
-                <a href="https://maps.google.com/" class="footer_head_right">
-                    Get directions &nbsp; 
-                    <div class="kt">&rarr;</div>
-                </a>
-                
-            </div>
-
-            <div class="dt"></div>
-
-            <div class="footer_up_container">
-
-                <div class="footer_up_left">
-                    <div class="logo">
-                        <img src="img/logo_footer.png" alt="Logo footer" class="footer_logo">
+                    <div class="store">
+                        <div class="apple_store">
+                            <a href="https://www.apple.com/">
+                                <img src="img/app_store.png" class="store_img" >
+                            </a>
+                        </div>
+            
+                        <div class="chplay">
+                            <a href="https://play.google.com">
+                                <img src="img/ch_play.png" class="store_img">
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="footer_info">
-                        <div class="footer_info_address"> 
-                            <i class="fa-solid fa-location-dot icon-info"></i>
-                            <div class="footer_text_address">
-                                Đảo Hòn Tre, Phường Vĩnh Nguyên,<br>
-                                Thành phố Nha Trang, Tỉnh Khánh Hòa,<br>
-                                Việt Nam
-                            </div>
-                        </div>
+                    <div class="link">
 
-                        <div class="footer_info_email">
-                            <i class="fa-solid fa-envelope icon-info"></i>
-                            <a href="" class="footer_text_email">callcenter@vinpearl.com</a>
-                        </div>
-
-                        <div class="footer_info_hotline">
-                            <i class="fa-solid fa-phone-volume icon-info"></i>
-                            <div class="footer_text">1900 23 23 89 (Nhánh số 3)</div>
-                        </div>
-
-                        <div class="footer_info_account">
-                            <p class="text_account">
-                                Chủ tài khoản:
-                                <br> Công ty cổ phần Vinpearl <br>
-                                 Tài khoản ngân hàng số: 9124412488166 (VND)
-                                  <br> Ngân hàng thương mại cổ phần Kỹ Thương <br>
-                                  Việt Nam (Techcombank) &ndash; Hội sở
-                            </p>
-                        </div>
-
-                        <div class="footer_info_reg">
-                            <p class="text_reg">
-                                Đăng kí kinh doanh:
-                                <br> 4200456848. ĐK lần đầu 26/7/2006. 
-                                <br> ĐK thay đổi tại từng thời điểm
-                            </p>
-                        </div>
-
-                        <div class="notifi">
-                            <a href="">
-                                <img class="confirmation" src="img/notify.png" alt="">
+                        <div class="link_item">
+                            <a href="https://www.facebook.com/" class="facebook">
+                                <i class="fa-brands fa-facebook icon"></i>
                             </a>
                         </div>
 
+                        <div class="link_item">
+                            <a href="https://www.youtube.com/" class="youtube">
+                                <i class="fa-brands fa-youtube icon"></i>
+                            </a>
+                        </div>
+                            
+                        <div class="link_item">
+                            <a href="https://instagram.com/" class="instagram">
+                                <i class="fa-brands fa-instagram icon"></i>
+                            </a>
+                        </div>
+                            
                     </div>
                 </div>
 
-                <div class="footer_up_right">
-
-                    <div class="footer_up_right_up">
-
-                        <!-- Về Vinpearl -->
-                        <div class="footer_menu about_Vinpearl">
-                            <h3 class="menu_tilte">Về Vinpearl</h3>
-                            <div class="menu_items">
-                                <ul class="menu">
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Về chúng tôi</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Liên hệ</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Tuyển dụng</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Câu hỏi thường gặp</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Bản đồ trang</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <!-- Điều khoản và quy định -->
-                        <div class="footer_menu rules">
-                            <h3 class="menu_tilte">Điều khoản và quy định</h3>
-                            <div class="menu_items">
-                                <ul class="menu">
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Điều khoản chung</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Quy định chung</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Quy định về thanh toán</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Quy định về xác nhận thông tin đặt phòng</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Chính sách giải quyết tranh chấp</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Chính sách quyền riêng tư</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <!-- Tin tức và sự kiện -->
-                        <div class="footer_menu news">
-                            <h3 class="menu_tilte">Tin tức &amp; Sự kiện</h3>
-                            <div class="menu_items">
-                                <ul class="menu">
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Tin công ty</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" Cẩm nang du lịch</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Thành tựu</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="footer_up_right_dow">
-
-                        <!-- Điểm đến nổi bật -->
-                        <div class="footer_menu destination">
-                            <h3 class="menu_tilte">Điểm đến nổi bật</h3>
-                            <div class="menu_items">
-                                <ul class="menu">
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Nam Hội An</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Nha Trang</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Phú Quốc</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Tag -->
-                        <div class="footer_menu tag">
-                            <h3 class="menu_tilte">Tag</h3>
-                            <div class="menu_items">
-                                <ul class="menu">
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Du lịch Phú Quốc</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Du lịch Nha Trang</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Du lịch Hội An</a>
-                                    </li>
-
-                                    <li class="menu_item">
-                                        <a href="" class="menu_item_link" >Du lịch Đà Nẵng</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="footer_menu qr">
-                            <div class="qr_code">
-                                <img src="https://statics.vinpearl.com/qr-final-final-final_1672909933.svg" alt="" class="qr_img">
-                                <div class="qr_text">Scan QR code 
-                                    <br> to download</div>
-                            </div>
-
-                            <div class="store">
-                                <div class="apple_store">
-                                    <a href="https://www.apple.com/">
-                                        <img src="img/app_store.png"
-                                           class="store_img" >
-                                    </a>
-                                </div>
-
-                                <div class="chplay">
-                                    <a href="https://play.google.com">
-                                        <img src="img/ch_play.png"
-                                            class="store_img">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="footer-up-info">
+                    <h3 class="title">HYDRANGEA-RESORT</h3>
+                    <div class="address">Bai Dai Area, Ganh Dau Commune, Phu Quoc City, <br> Kien Giang Province, Vietnam</div>
+                    <div class="email-phone">Email: res.@HYDRANGEA.com Tel: (+84) 297 3550 550</div>
                 </div>
-
+        
+                <div class="link-ggMap js-linkggMap">
+                    <a href="https://maps.google.com/">
+                        Get directions <span class="goto-icon js-goto-icon">&rarr;</span>
+                    </a>
+                </div>
+        
+                <div class="dt"></div>
+        
+                <div class="footer-main-info">
+                    <img src="img/logo_footer.png" class="logo">
+        
+                    <div class="address info-item">
+                        <i class="fa-solid fa-location-dot icon-info"></i>
+                        <div class="footer_text_address">
+                            Đảo Hòn Tre, Phường Vĩnh Nguyên,<br>
+                            Thành phố Nha Trang, Tỉnh Khánh Hòa,<br>
+                            Việt Nam
+                        </div>
+                    </div>
+        
+                    <div class="email info-item">
+                        <i class="fa-solid fa-envelope icon-info"></i>
+                        <a href="" class="footer_text_email">callcenter@HYDRANGEA.com</a>
+                    </div>
+        
+                    <div class="phone info-item">
+                        <i class="fa-solid fa-phone-volume icon-info"></i>
+                        <div class="footer_text">1900 23 23 89 (Nhánh số 3)</div>
+                    </div>
+        
+                    <div class="acc-owner info-item">
+                        <div class="info-item">Chủ tài khoản:</div>
+                        <div class="info-item">Công ty cổ phần HYDRANGEA</div>
+                        <div class="info-item">Tài khoản ngân hàng số: 9124412488166 (VND)</div>
+                        <div class="info-item">Ngân hàng thương mại cổ phần Kỹ Thương</div>
+                        <div class="info-item">Việt Nam (Techcombank) &ndash; Hội sở</div>
+                    </div>
+        
+                    <div class="link-notify info-item">
+                        <img src="img/notify.png">
+                    </div>
+                </div>
+        
+        
+                <div class="about-HYDRANGEA menu menu-item1">
+                    <h3>Về HYDRANGEA <i class="fa-solid fa-caret-down nav-arrow-down mobile-showList show1"></i></h3>
+                    
+                    <div> <a href="" class="link-item link-item1">Về chúng tôi</a> </div>
+                    <div> <a href="" class="link-item link-item1">Liên hệ</a> </div>
+                    <div> <a href="" class="link-item link-item1">Tuyển dụng</a> </div>
+                    <div> <a href="" class="link-item link-item1">Câu hỏi thường gặp</a> </div>
+                    <div> <a href="" class="link-item link-item1">Bản đồ trang</a> </div>
+                </div>
+        
+                <div class="regulatory-terms menu menu-item2">
+                    <h3>Điều khoản và quy định <i class="fa-solid fa-caret-down nav-arrow-down mobile-showList show2"></i></h3>
+                    
+                    <div> <a href="" class="link-item link-item2">Điều khoản chung</a> </div>
+                    <div> <a href="" class="link-item link-item2">Quy định chung</a> </div>
+                    <div> <a href="" class="link-item link-item2">Quy định về thanh toán</a> </div>
+                    <div> <a href="" class="link-item link-item2">Quy định về xác nhận thông tin</a> </div>
+                    <div> <a href="" class="link-item link-item2">Chính sách giải quyết tranh chấp</a> </div>
+                    <div> <a href="" class="link-item link-item2">Chính sách quyền riêng tư</a> </div>
+                </div>
+        
+                <div class="event menu menu-item3">
+                    <h3>Tin tức & Sự kiện <i class="fa-solid fa-caret-down nav-arrow-down mobile-showList show3"></i></h3>
+                    
+                    <div> <a href="" class="link-item link-item3">Tin công ty</a> </div>
+                    <div> <a href="" class="link-item link-item3">Thành tựu</a> </div>
+                </div>
+        
+                <div class="destination menu menu-item4">
+                    <h3>Điểm đến nổi bật <i class="fa-solid fa-caret-down nav-arrow-down mobile-showList show4"></i></h3>
+                    
+                    <div> <a href="" class="link-item link-item4">Nam Hội An</a> </div>
+                    <div> <a href="" class="link-item link-item4">Nha Trang</a> </div>
+                    <div> <a href="" class="link-item link-item4">Phú Quốc</a> </div>
+                </div>
+        
+                <div class="tag menu menu-item5">
+                    <h3>Tag <i class="fa-solid fa-caret-down nav-arrow-down mobile-showList show5"></i></h3>
+                    
+                    <div> <a href="" class="link-item link-item5">Du lịch Phú Quốc</a> </div>
+                    <div> <a href="" class="link-item link-item5">Du lịch Nha Trang</a> </div>
+                    <div> <a href="" class="link-item link-item5">Du lịch Hội An</a> </div>
+                    <div> <a href="" class="link-item link-item5">Du lịch Đà Nẵng</a> </div>
+                </div>
+        
+                <div class="dowload">
+                    <div class="qr">
+                        <img src="https://statics.vinpearl.com/qr-final-final-final_1672909933.svg" class="qr-img">
+                        <div class="text-dowload">Scan QR code <br> to download</div>
+                    </div>
+        
+                    <div class="store">
+                        <div class="apple_store">
+                            <a href="https://www.apple.com/">
+                                <img src="img/app_store.png" class="store_img" >
+                            </a>
+                        </div>
+            
+                        <div class="chplay">
+                            <a href="https://play.google.com">
+                                <img src="img/ch_play.png" class="store_img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-        <!-- Phần dưới của footer -->
-        <div class="footer_dow">
-            <div class="container">
-
-                <div class="container_left_text">
-                    Copyright © 2022 Vinpearl.com. All rights reserved
-                </div>
-
-                <div class="container_link_right">
-                    <a href="https://www.facebook.com/" class="face_book link_item">
-                        <i class="fa-brands fa-facebook"></i>
+    
+            <div class="footer-dow">
+                <div class="text">Copyright © 2022 HYDRANGEA.com. All rights reserved</div>
+    
+                <div class="link">
+                    <a href="https://www.facebook.com/" class="facebook link_item">
+                        <i class="fa-brands fa-facebook icon"></i>
                     </a>
-
-                    <a href="https://www.youtube.com/" class="you_tube link_item">
-                        <i class="fa-brands fa-youtube"></i>
+    
+                    <a href="https://www.youtube.com/" class="youtube link_item">
+                        <i class="fa-brands fa-youtube icon"></i>
                     </a>
-
+    
                     <a href="https://instagram.com/" class="instagram link_item">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram icon"></i>
                     </a>
                 </div>
-
             </div>
         </div>
+
     </div>
 
+    
 
+    <script src="main.js"></script>
 </body>
-
 </html>
+
+
+
