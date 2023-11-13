@@ -7,222 +7,193 @@
     --text-color: #000000;
 }
 
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-/*                                   Bắt đầu CSS header */
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
-#header {
-    height: 20vh;
-    background-color: var(--header-color);
-    border: .1rem solid black;
-  }
-  
-  #header #header-container  {
-    padding: 1rem 10%;
-    display: left;
-    
-  }
 
-  #header #header-container #logo {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  #header #header-container #navi {
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  #header #header-container #navi a {
-    color: var(--text-color);
-  }
-
-
-
-
-/*                                        Kết thúc CSS header */
-
-
-
-
-/*                           Bắt đầu CSS FOOTER */
-
-.footer_up{
-    background-color: var(--footer-color);
-    color: var(--text-color);
-}
-
-.footer_head{
-    display: flex;
-    height: 157px;
-}
-
-.footer_head_left{
-    color: var(--text-color);
+.footer-up-info{
+    grid-area: footerUpInfo;
+    font-weight: 500;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    font-style: normal;
-    position: relative;
-    left: 50px;
-    top: 40px;
 }
 
-.footer_head_right{
-    height: 42px;
-    width: 148px;
-    border: #000 solid 1px;
+.footer-up-info > *{
+    margin-bottom: 8px;
+}
+
+.link-ggMap{
+    grid-area: linkggMap;
+    height: 60px;
+    width: 160px;
+    border: 1px solid;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+}
+
+.goto-icon{
+    margin-left: 5px;
+    position: relative;
+}
+
+.link-ggMap a{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 50px;
-    left: 500px;
-    color: var(--text-color);
-    text-decoration: none;
 }
 
-.footer_head_right:hover{
+.link-ggMap:hover{
     background-color: var(--button-hover-color);
+    border-color: #ccc;
 }
 
 .dt{
-    background-color: black;
-    height: 0.5px;
-    width: 90%;
+    grid-area: dt;
+    border: 1px solid #000;
+    opacity: 0.1;
+    margin: 20px 0;
+}
+
+.footer-main-info{
+    grid-area: footerMainInfo;
+}
+
+.footer-main-info .logo{
     position: relative;
-    left: 56px;
-    opacity: 0.2;
+    left: 80px;
+    cursor: pointer;
 }
 
-.footer_up_left{
-    margin-left: 50px;
-}
-
-.footer_up_container{
-    margin-top: 52px;
+.footer-main-info .address,.email,.phone{
     display: flex;
+    color: var(--button-color);
+}
+
+.address{
+    grid-area: address;
+}
+
+.email{
+    grid-area: email;
+}
+
+.phone{
+    grid-area: phone;
 }
 
 
-.footer_info_address{
-    color: black;
-    display: flex   ;
-}
-
-.footer_text_email{
-    color: #65763a;
-    text-decoration: none;
-}
-
-.footer_info_hotline{
-    display: flex;
-    color: #65763a;
-}
-
-.text_account,
-.footer_info_reg{
-    color: black;
-}
-
-.footer_info_address,
-.footer_info_email,
-.footer_info_hotline,
-.footer_info_account,
-.footer_info_reg,
-.confirmation {
-    margin-top: 15px;
-}
-
-.text_account,
-.text_reg{
-    font-size: 13px;
+.footer-main-info .email a{
+    color: var(--button-color);
 }
 
 .icon-info{
-    color: #65763a;
+    margin-right: 10px;
+}
+
+.footer-main-info .info-item{
+    margin-top: 7px;
+}
+
+.menu-item1{
+    grid-area: menuItem1;
+}
+
+.menu-item2{
+    grid-area: menuItem2;
+}
+
+.menu-item3{
+    grid-area: menuItem3;
+}
+
+.menu-item4{
+    grid-area: menuItem4;
+}
+
+.menu-item5{
+    grid-area: menuItem5;
+}
+
+.menu > *{
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.menu .link-item:hover{
+    color: #ccc;
+}
+
+.dowload{
+    grid-area: dowLoad;
+}
+
+.dowload > *{
+    display: flex;
+    color: var(--button-color);
+    margin-bottom: 15px;
+}
+
+.dowload .qr .text-dowload,
+.dowload .store .chplay{
+    margin-left: 20px;
+}
+
+.link-notify{
+    margin-top: 20px;
+}
+
+
+.footer-dow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0A0F2B;
+    color: #fff;
+    height: 60px;
+}
+
+.footer-dow .link{
+    margin-right: 70px;
+    grid-area: storeLink;
+}
+
+.footer-dow .text{
+    margin-left: 50px;
+}
+
+.footer-dow .link .icon{
+    color: var(--button-color);
     margin-right: 12px;
 }
 
-.confirmation{
+.footer-dow .link .icon:hover{
+    opacity: 0.8;
+}
+
+.container-footer-up{
+    display: grid;
+    grid-template-areas: "footerUpInfo footerUpInfo linkggMap linkggMap"
+                         "dt dt dt dt"
+                         "footerMainInfo menuItem1 menuItem2 menuItem3"
+                         "footerMainInfo menuItem4 menuItem5 dowLoad";
+    background-color: var(--footer-color);
+    padding: 30px 5% 10px 5%;
+}
+
+.link-notify img{
     height: 37px;
     width: 100px;
-}
-
-.logo{
-    position: relative;
-    bottom: 24px;
-    left: 60px;
-}
-
-.footer_logo{
-    height: 90px;
-    width: 90px;
-}
-
-.menu_item{
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-.menu_item_link{
-    text-decoration: none;
-    color: black;
-}
-
-.menu_tilte{
-    color: black;
-    margin-bottom: 10px;
-}
-
-.menu_item_link:hover{
-    color: var(--button-hover-color);
-}
-
-.footer_menu{
-    margin-left: 70px;
-    margin-bottom: 30px;
-}
-
-.qr_code{
-    display: flex;
-}
-
-.store{
-    display: flex;
-}
-
-.qr{
-    position: relative;
-    left: 150px;
-    top: 24px;
-}
-
-.qr_img{
-    height: 88px;
-    width: 92px;
-}
-
-.qr_text{
-    color: var(--button-color);
-    margin-left: 15px;
 }
 
 .store_img{
@@ -231,77 +202,84 @@ a{
     border-radius: 2px;
 }
 
-.store{
-    margin-top: 15px;
+.for-mobile{
+    display: none;
+    grid-area: My_HYDRANGEA;
 }
 
-.chplay{
-    margin-left: 15px;
-}
-
-.notifi{
-    margin-top: 20px;
-}
-
-.footer_up{
-    padding-bottom: 30px;
-}
-
-.footer_up_right_up{
-    display: flex;
-}
-
-.footer_up_right_dow{
-    display: flex;
+.mobile-showList{
+    display: none;
 }
 
 
+@media only screen and (max-width: 500px){
+
+    .for-mobile{
+        display: block;
+        color: var(--button-color);
+    }
+
+    .container-footer-up{
+        grid-template-areas: "My_HYDRANGEA"                              
+                              "address"
+                              "email"
+                              "phone"
+                              "menuItem1"
+                              "menuItem2"
+                              "menuItem3"
+                              "menuItem4"
+                              "menuItem5"
+                              "footerMainInfo";
+    }
+
+    .for-mobile > *{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .apple_store{
+      margin-right: 10px;
+    }
+
+    .for-mobile .link .link_item{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .link_item a .icon{
+        font-size: 17px;
+    }
+
+    .menu .link-item{
+        margin-left: 50px;
+        display: none;
+    }
+
+    .menu h3{
+        margin: 10px 0;
+    }
+
+    .mobile-showList, .close-list{
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .footer-dow .text{
+        font-size: 12px;
+        margin: auto;
+    }
 
 
-.footer_dow .container{
-    display: flex;
-    justify-content: space-around;
-    background-color: #0a0f2b;
-    height: 50px;
-    align-items: center;
+
+    .footer-up-info, .link-ggMap,
+    .dt, .footer-main-info .logo, .link-notify, .dowload, .footer-dow .link{
+        display: none;
+    }
 }
-
-.container_left_text{
-    color: #fff;
-    font-size: 13px;
-    position: relative;
-    right: 172px;
-}
-
-.container_link_right{
-    position: relative;
-    left: 140px;
-}
-
-.link_item{
-    text-decoration: none;
-    color: var(--button-color);
-    margin-right: 10px;
-}
-
-.link_item:hover{
-    color: var(--button-hover-color);
-}
-
-
-/*                          Kết thúc CSS FOOTER */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
