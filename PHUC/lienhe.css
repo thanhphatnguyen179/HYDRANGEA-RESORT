@@ -50,12 +50,15 @@ a {
     background-position: center;
     background-size: cover;
     position: absolute;
+    
 }
 
 .lienHe {
-    margin-left: 24.5%;
-    width: 41%;
-    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 500px;
+    height: 550px;
     border-radius: 10px;
     position: relative;
     margin-top: 2%;
@@ -80,11 +83,9 @@ a {
 }
 
 .lienHe .not-white{
-    display: block;
     color: var(--header-color);
     background-color: var(--body-color);
     width: 23rem;
-    text-align: left;
     border-radius: 1rem;;
     padding: 1rem 1rem;
     
@@ -114,3 +115,40 @@ a {
     padding-left: 0.5rem;
     border: 1px solid var(--header-color);
 }
+
+.lienHe .social-icon img{
+    width: 1rem;
+}
+
+
+@media only screen and (max-width: 500px){
+    .lienHe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 0%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .lienHe table textarea{
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        border: 1px solid var(--header-color);
+        max-width: 300px;
+    }
+
+    .lienHe .button{
+        margin-left: 66%;
+    }
+
+    .lienHe .social-icon{
+        margin-right: 10%;
+    }
+}
+
+
