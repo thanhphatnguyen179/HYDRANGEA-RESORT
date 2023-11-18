@@ -34,22 +34,58 @@ function showDivs(n) {
 
 // End Slider
 
-// Start Form
+// Start search-box
 
-var a = document.getElementById("login");
-var b = document.getElementById("sign-up");
-var c = document.getElementById("button-color");
+// window.onscroll = function() {scrollFunction()};
 
-function signup(){
-  a.style.left = "-400px";
-  b.style.left = "50px";
-  c.style.left = "140px";
+// function scrollFunction() {
+//   if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+//     document.getElementById("search-box").style.top = "0";
+//   } else {
+//     document.getElementById("search-box").style.top = "880px";
+//   }
+// }
+
+// window.onscroll = function() {myFunction()};
+
+// var navbar = document.getElementById("search-box");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+$(window).scroll(function(){
+  var sticky = $('#search-box'),
+      scroll = $(window).scrollTop();
+  var height = $('.slide').height();
+
+  if (scroll >= height) sticky.addClass('sticky');
+  else sticky.removeClass('sticky');
+});
+
+// End search-box
+
+// Start Responsive of Navigation
+
+
+function myFunction() {
+  var x = document.getElementById("navil");
+  if (x.className === "navi-left") {
+    x.className += " responsive";
+  } else {
+    x.className = "navi-left";
+  }
+  var y = document.getElementById("navir");
+  if (y.className === "navi-right") {
+    y.className += " responsive";
+  } else {
+    y.className = "navi-right";
+  }
 }
 
-function login(){
-  a.style.left = "50px";
-  b.style.left = "450px";
-  c.style.left = "0";
-}
-
-// End Form
+// End Responsive of Navigation
