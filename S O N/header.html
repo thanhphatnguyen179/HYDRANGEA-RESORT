@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <div id="main">
+
+        <div class="slider">
+            <!-- <div id="log">
+                <a href="#">feQỪq</a>
+            </div> -->
+            <div id="header">
+                <div id="header-container">
+                    
+                    <div id="logo">
+                        <a href="00_trangChu.html">
+                                <img src="https://cdn.glitch.global/15976561-84fa-4bc2-bbc4-d5aa83418227/logo_footer.png?v=1698747325425"/>
+                        </a>
+                    </div>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i>
+                      </a>
+                    
+                    <div class="myNavi" >
+                        
+                    <div class="navi-left" id="navil"> 
+                        <a href="00_trangChu.html">TRANG CHỦ</a>
+                        <a href="01_gioithieu.html">GIỚI THIỆU</a>
+                        <a href="/phong-ngu.html">PHÒNG NGỦ</a>
+                    </div>
+        
+                    <div class="navi-right" id="navir">
+                        <a href="/khuyen-mai.html">KHUYẾN MÃI</a>
+                        <a href="/tin-tuc.html">TIN TỨC</a>
+                        <a href="lienhe.html">LIÊN HỆ</a>
+                    </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navil");
+          if (x.className === "navi-left") {
+            x.className += " responsive";
+          } else {
+            x.className = "navi-left";
+          }
+          var y = document.getElementById("navir");
+          if (y.className === "navi-right") {
+            y.className += " responsive";
+          } else {
+            y.className = "navi-right";
+          }
+        }
+        </script>
+        <div style="height: 2000px;"></div>
+</body>
+</html>
