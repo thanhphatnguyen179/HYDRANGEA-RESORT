@@ -1,0 +1,532 @@
+:root{
+    --header-color: #abd641;
+    --body-color: #ffffff;
+    --footer-color: #7398d4;
+    --button-color:#65763a;
+    --button-hover-color:#7fa71c;
+    --text-color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #abd641;
+    margin-top: 1rem;
+    color: #7F4BEE;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #abd641;
+}
+
+section {
+    padding: 0 5rem;
+}
+.heading {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: auto;
+    background: url(images/gioiThieu/pic_2.jpg);
+
+}
+
+.heading h1{
+    /* font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 1.5rem 3rem rgba(0,0,0,.3); */
+
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    object-fit: cover;
+    
+    /* box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); */
+}
+.heading p {
+    font-size: 2rem;
+    color: white;
+    text-transform: inherit;
+}
+
+
+
+#page-header {
+    background-image: url(./images/gioiThieu/pic_2.jpg);
+    width: 100%;
+    height:  80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.lopphu {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height:  80vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#page-header h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    object-fit: cover;
+
+    z-index: 100;
+}
+
+#page-header p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 100;
+}
+
+
+
+/*section tong Quan starts*/
+
+#tong-quan h2 {
+    text-align: center;
+    font: 800;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+#tong-quan .tq-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+#tong-quan .tq-box .tq-img {
+    width: 40%;
+    margin-right: 40px;
+    
+}
+#tong-quan img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+#tong-quan .tq-box .tq-content {
+    width: 60%;
+}
+#tong-quan .tq-box .tq-content p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/*section tong Quan ends*/
+
+
+/* cau-chuyen starts */
+.cau-chuyen {
+    margin-top: 5rem;
+    padding: 5% 10%;
+    background-color: #0766AD;
+    color: #FFFFFF;
+}
+.cau-chuyen h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.cau-chuyen p {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+/* cautruyen ends */
+
+/* section sanPham starts */
+
+
+
+.sp-container .sp-ten {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+#pro-details {
+
+    display: flex;
+    margin-top: 2rem;
+}
+#pro-details .single-pro-image {
+    width: 50%;
+    margin-right: 50px;
+}
+#pro-details .single-pro-image img {
+    width: 100%;
+}
+
+#pro-details .single-pro-image .small-img-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+#pro-details .single-pro-image .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+  }
+
+#pro-details .single-pro-details {
+    width: 50%;
+}
+
+#pro-details .single-pro-details h1 {
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+#pro-details .single-pro-details h2 {
+    font-size: 1.5rem;
+    padding-top: 5%;
+}
+
+
+
+#pro-details .single-pro-details input {
+    width: 4rem;
+    height: 2rem;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+#pro-details .single-pro-details input:focus {
+    outline: none;  
+}
+
+
+#pro-details .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#pro-details .single-pro-details p{
+    padding: 1rem 0;
+    line-height: 1.2;
+    text-align: justify;
+}
+  
+#pro-details .single-pro-details .sp-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#pro-details .single-pro-details .sp-icons .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #088178;
+    width: 30%;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+}
+#pro-details .single-pro-details .sp-icons .icons i {
+    padding-top: 1.5rem;
+
+    font-size: 1.5rem;
+}
+#pro-details .single-pro-details .sp-icons .icons span {
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+}
+
+/* section sanPham ends */
+
+
+
+/*gioHang starts*/
+.gio-hang h1{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+
+#cartDetail {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+#cartDetail td, #cartDetail th {
+    border: 1px solid #ddd;
+    border-right: none; 
+    border-left: none;
+}
+
+
+#cartDetail tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#cartDetail tr:hover {
+    background-color: #ddd;
+}
+
+#cartDetail th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#cartDetail img {
+    max-width: 100px;
+    height: auto;
+    margin: 1rem;
+    cursor: pointer;
+}
+#cartDetail tfoot td {
+    height: 3rem;
+    padding-right: 5rem;
+}
+
+
+.gio-hang .gh-btn {
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.submit-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.dh-btn {
+    background: #abd641;
+    margin-top: 1rem;
+    color: #7F4BEE;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+/*giohang ends*/
+
+
+
+@media (max-width: 799px) {
+    html {
+        font-size: 62.5%;
+    }
+    #page-header h2 {
+        font-size: 2.5rem;
+    }
+    #page-header p {
+        font-size: 1.5rem;
+    }
+    #tong-quan {
+        padding: 0;
+    }
+    #tong-quan h2 {
+        text-align: center;
+        font: 800;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    #tong-quan .tq-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    #tong-quan .tq-box .tq-img {
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    #tong-quan img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    #tong-quan .tq-box .tq-content {
+        padding-top: 2rem;
+        width: 100%;
+    }
+    #tong-quan .tq-box .tq-content p {
+        padding: 2rem 5rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 477px)  {
+
+    #tong-quan img {
+
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    #pro-details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    #pro-details .single-pro-image {
+        width: 100%;
+        margin-right: 50px;
+    }
+    #pro-details .single-pro-image img {
+        width: 100%;
+    }
+    
+    #pro-details .single-pro-image .small-img-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 3%;
+    }
+    
+    #pro-details .single-pro-image .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+      }
+    
+    #pro-details .single-pro-details {
+        width: 100%;
+    }
+    
+    #pro-details .single-pro-details h1 {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+    
+    #pro-details .single-pro-details h2 {
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+    
+    
+    
+    #pro-details .single-pro-details input {
+        width: 4rem;
+        height: 2rem;
+        padding-left: 10px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    #pro-details .single-pro-details input:focus {
+        outline: none;  
+    }
+    
+    
+    #pro-details .single-pro-details button{
+        background-color: #088178;
+        color: #fff;
+    }
+    
+    #pro-details .single-pro-details p{
+        padding: 1rem 0;
+        line-height: 1.2;
+        text-align: justify;
+    }
+      
+    #pro-details .single-pro-details .sp-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    #pro-details .single-pro-details .sp-icons .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #088178;
+        width: 30%;
+        border-radius: 1rem;
+        color: #fff;
+        padding: 1rem;
+    }
+    #pro-details .single-pro-details .sp-icons .icons i {
+        padding-top: 1.5rem;
+    
+        font-size: 1.5rem;
+    }
+    #pro-details .single-pro-details .sp-icons .icons span {
+        padding-top: 1.5rem;
+        font-size: 0.75rem;
+    }
+    
+}
