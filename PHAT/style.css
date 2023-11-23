@@ -20,6 +20,205 @@ a{
 }
 
 
+/* ===============================================Bắt đầu trang chủ ========================================== */
+
+
+#header {
+    font-family: 'EB Garamond';
+    font-size: larger;
+    position: relative;
+    height: 15vh;
+    z-index: 2;
+  }
+  
+#header #header-container #logo {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    left: 47%;
+  }
+  #header #header-container a {
+    color: #ffffff;
+    padding: 6px;
+  }
+  #header #header-container .navi-left,
+  #header #header-container .navi-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+  }
+  #header #header-container .navi-right {
+    float: right;
+    padding-right: 8rem;
+  }
+  #header #header-container .navi-left {
+    float: left;
+    padding-left: 8rem;
+  }
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   }
+    
+   .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+   }
+    
+   .slider .slide:nth-child(2) {
+      background-image: url('img/img-1.jpg');
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: url('img/img-2.jpg');
+   }
+   
+   .slider .slide:nth-child(4) {
+      background-image: url('img/img-3.jpg');
+   }
+   
+   .slider .slide:nth-child(5) {
+      background-image: url('img/img-4.jpg');
+   }
+   
+   .slider .slide:nth-child(6) {
+      background-image: url('img/img-5.jpg');
+   }
+
+   .slider .slide:nth-child(7) {
+    background-image: url('img/img-6.jpg');
+    }
+
+/* slider */
+
+
+#head a:hover {
+    background-color: rgb(158, 40, 154)
+
+}
+
+.navi-left a:hover,  .navi-right a:hover {
+    background-color: var(--button-hover-color);
+    color: bisque;
+    border-radius: 6px;
+}
+
+.button-left, .button-right {
+    width: 42px;
+    height: 32px;
+    border: none;
+}
+
+.button-left:hover, .button-right:hover {
+    color: wheat;
+    background-color: var(--button-hover-color);
+}
+
+.button-left, .button-right {
+    position: absolute;
+    top: 50%;
+}
+
+.button-left {
+    left: 0%;
+}
+
+.button-right {
+    right: 0%;
+}
+
+/*Bat dau Trang chu*/
+#search-box {
+    display: flex;
+    background-color: var(--header-color);
+    width: 60vw;
+    min-width: 1000px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    transition: top 0.3s;
+    overflow: hidden;
+    margin: 0 20%;
+    z-index: 3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    margin-right: 0px;
+}
+
+#search-box .items{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border-radius: 5px;
+}
+
+#search-box .items i{
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+#search-box .items:last-child button{
+    margin-top: 1rem;
+    height: 70%;
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-box .items:last-child button:hover{
+    background-color: var(--button-hover-color);
+}
+
+#main-content .container {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-left:  2.5rem;
+    column-gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#main-content .container .item img  {
+    height: 25rem;
+    width: 35rem;
+}
+
+#main-content .container .item a{
+    color: black;
+    text-decoration: none;
+}
+
+#main-content .container .item a:hover{
+    color: var(--button-hover-color);
+}
+
+#main-content .container .item a i{
+    color: var(--header-color);
+}
+
+
+
+/* ========================================FOOOTER Start========================================= */
+
+
 .footer-up-info{
     grid-area: footerUpInfo;
     font-weight: 500;
@@ -252,6 +451,10 @@ a{
         margin-right: 10px;
     }
 
+    .for-mobile .link :hover{
+        background-color: var(--button-hover-color);
+    }
+
     .link_item a .icon{
         font-size: 17px;
     }
@@ -263,11 +466,14 @@ a{
 
     .menu h3{
         margin: 10px 0;
+        display: inline-block;
+        cursor: pointer;
     }
 
     .mobile-showList, .close-list{
         display: inline-block;
         margin-left: 5px;
+        cursor: pointer;
     }
 
     .footer-dow .text{
@@ -281,5 +487,300 @@ a{
     .dt, .footer-main-info .logo, .link-notify, .dowload, .footer-dow .link{
         display: none;
     }
+
+    
+
 }
+
+/* ========================================FOOOTER End========================================= */
+
+
+
+
+/* ==========================================LienHe Start ======================================= */
+
+
+#main-content {
+    padding: 0 5%;
+}
+
+#main-content a:hover{
+    color: var(--button-hover-color);
+}
+
+#main-content i{
+    color: var(--header-color);
+}
+
+.back-ground {
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-image: url(images/lienHe/anhNen.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.lienHe {
+    margin-left: 24.5%;
+    width: 41%;
+    height: 540px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 2%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.lienHe h1{
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.lienHe p{
+    color: var(--text-color);
+}
+
+.lienHe a{
+    color: var(--text-color);
+}
+
+.lienHe .not-white{
+    display: block;
+    color: var(--header-color);
+    background-color: var(--body-color);
+    width: 23rem;
+    text-align: left;
+    border-radius: 1rem;;
+    padding: 1rem 1rem;
+    
+}
+
+.lienHe .label-color{
+    background-color: var(--body-color);
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    width: 4.5rem;
+    color: var(--header-color);
+}
+
+.lienHe .button{
+    margin-left: 76%;
+}
+
+.lienHe table input{
+    width: 12rem;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+}
+
+.lienHe table textarea{
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+}
+
+
+
+/* ==================================================Liên hệ end =============================================== */
+
+
+
+
+
+/* ================================================== Giới thiệu start =============================================== */
+
+.intro-container{
+    padding: 5%;
+}
+
+
+.intro-title{
+    text-align: center;
+    color: var(--header-color);    
+}
+
+.overview-resort .title, 
+.architecture .title,
+.brand-story .title,
+.service .title,
+.service-main .title{
+    text-align: center;
+    color: var(--header-color);
+    margin: 50px 0 30px 0;
+}
+
+.overview-resort .content,
+.architecture  .content,
+.brand-story .content,
+.service .content,
+.service-main .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overview-resort .text,
+.architecture .text,
+.brand-story .text,
+.service .text{
+    text-indent: 60px;
+    text-align: justify;
+    width: 500px;
+}
+
+.overview-img,
+.architecture-img,
+.brand-img,
+.service-img,
+.slider-service, .slider-service-img1, .slider-service-img2, .slider-service-img3{
+    height: 380px;
+    width: 480px;
+    border-radius: 5px;
+}
+
+.goto-Contact{
+    position: relative;
+    bottom: 90px;
+    left: 650px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-hover-color);
+    opacity: 1;
+}
+
+.goto-Contact:hover{
+    opacity: 0.9;
+    border: 0px;
+}
+
+.architecture .content,
+.service .content{
+    flex-direction: row-reverse;
+}
+
+.service .text-item{
+    margin-bottom: 10px;
+}
+
+.list-service{
+    grid-area: listService;
+}
+
+
+.list-service-item{
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.slider-service{
+    position: relative;
+    left: 60px; 
+    grid-area: sliderService;
+}
+
+.list-service-item i{
+    cursor: pointer;
+}
+
+.list-service-item:hover a,
+.list-service-item:hover i{
+    color: var(--button-hover-color);
+}
+
+.service-main #text{
+    text-indent: 60px;
+    text-align: justify;
+    width: 350px;    
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: textServiceMain;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .overview-resort .content,
+    .architecture  .content,
+    .brand-story .content,
+    .service .content,
+    .service-main .content{
+        display: block;
+    }
+
+    .goto-Contact{
+        left: calc(50% - 50px);
+        top: 25px;
+    }
+
+    .overview-img,
+    .architecture-img,
+    .brand-img,
+    .service-img,
+    .slider-service, .slider-service-img1, .slider-service-img2, .slider-service-img3{
+        height: 300px;
+        width: 450px;
+    }
+
+    .service-main .content{
+        display: grid;
+        grid-template-areas: "listService textServiceMain"
+                             "sliderService sliderService";
+    }
+
+    .service-main #text{
+        width: 280px;
+        padding: 15px;
+    }
+
+    .slider-service{
+        left: 0;
+        margin-top: 25px;
+    }
+
+    .overview-resort .text,
+    .architecture .text,
+    .brand-story .text,
+    .service .text{
+        width: 450px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
