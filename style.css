@@ -1,5 +1,184 @@
-/* Hoang Phuc Starts*/
+:root{
+    --header-color: #abd641;
+    --body-color: #ffffff;
+    --footer-color: #7398d4;
+    --button-color:#65763a;
+    --button-hover-color:#7fa71c;
+    --text-color: #ffffff;
+}
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    border: 0;
+}
+
+/* Hoang Phuc Starts*/
+.lh_box a:hover{
+    color: var(--button-hover-color);
+}
+
+.lh_box i{
+    color: var(--header-color);
+}
+
+.lh_back_ground {
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-image: url(images/lien-he/anhNen.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.lh_box {
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 35%;
+    height: 90%;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 2%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    padding: 0 3%;
+    overflow: hidden;
+}
+
+.lh_box h1{
+    padding: 3% 5%;
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.lh_box p{
+    color: var(--text-color);
+}
+
+.lh_box a{
+    color: var(--text-color);
+}
+
+.lh_box .not-white{
+    color: var(--header-color);
+    background-color: var(--body-color);
+    width: 23rem;
+    border-radius: 1rem;;
+    padding: 1rem 1rem;
+    
+}
+
+.lh_box .label-color{
+    background-color: var(--body-color);
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    width: 4.5rem;
+    color: var(--header-color);
+}
+
+.lh_box .button{
+    margin-left: 76%;
+}
+
+.lh_box table input{
+    width: 12rem;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+}
+
+.lh_box table textarea{
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+}
+
+.lh_box .social-icon img{
+    width: 1rem;
+}
+
+#search-box {
+    display: flex;
+    background-color: var(--header-color);
+    width: 60vw;
+    min-width: 950px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    transition: top 0.3s;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    margin-right: 0px;
+}
+
+#search-box .items{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+#search-box .items p{
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#search-box .items:last-child button{
+    margin-top: 1rem;
+    height: 70%;
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-box .items:last-child button:hover{
+    background-color: var(--button-hover-color);
+}
+
+.tc_content{
+    
+    padding: 1% 2%;
+    background-color: #e4f3b6;
+}
+
+.tc_content .tc_container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+.tc_content .tc_container img{
+    height: 75%;
+    width: 100%;
+}
+
+.tc_content .tc_container .item a{
+    color: black;
+    text-decoration: none;
+}
+
+.tc_content .tc_container .item a:hover{
+    color: var(--button-hover-color);
+}
+
+.tc_content .tc_container .item a i{
+    color: var(--header-color);
+}
 /* Hoang Phuc ends*/
 
 
