@@ -440,6 +440,330 @@ body{
 }
 /* End responsive header */
 
+
+
+/* Footer start */
+
+/* ========================================FOOOTER Start========================================= */
+
+
+.footer-up-info{
+    grid-area: footerUpInfo;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-up-info > *{
+    margin-bottom: 8px;
+}
+
+.link-ggMap{
+    grid-area: linkggMap;
+    height: 60px;
+    width: 160px;
+    border: 1px solid;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+}
+
+.goto-icon{
+    margin-left: 5px;
+    position: relative;
+}
+
+.link-ggMap a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-ggMap:hover{
+    background-color: var(--button-hover-color);
+    border-color: #ccc;
+}
+
+.dt{
+    grid-area: dt;
+    border: 1px solid #000;
+    opacity: 0.1;
+    margin: 20px 0;
+}
+
+.footer-main-info{
+    grid-area: footerMainInfo;
+}
+
+.footer-main-info .logo{
+    position: relative;
+    left: 80px;
+    cursor: pointer;
+}
+
+.footer-main-info .address,.email,.phone{
+    display: flex;
+    color: var(--button-color);
+}
+
+.address{
+    grid-area: address;
+}
+
+.email{
+    grid-area: email;
+}
+
+.phone{
+    grid-area: phone;
+}
+
+
+.footer-main-info .email a{
+    color: var(--button-color);
+}
+
+.icon-info{
+    margin-right: 10px;
+}
+
+.footer-main-info .info-item{
+    margin-top: 7px;
+}
+
+.menu-item1{
+    grid-area: menuItem1;
+}
+
+.menu-item2{
+    grid-area: menuItem2;
+}
+
+.menu-item3{
+    grid-area: menuItem3;
+}
+
+.menu-item4{
+    grid-area: menuItem4;
+}
+
+.menu-item5{
+    grid-area: menuItem5;
+}
+
+.menu > *{
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.menu .link-item a:hover{
+    color: #ccc;
+}
+
+.dowload{
+    grid-area: dowLoad;
+}
+
+.dowload > *{
+    display: flex;
+    color: var(--button-color);
+    margin-bottom: 15px;
+}
+
+.dowload .qr .text-dowload,
+.dowload .store .chplay{
+    margin-left: 20px;
+}
+
+.link-notify{
+    margin-top: 20px;
+}
+
+
+.footer-dow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0A0F2B;
+    color: #fff;
+    height: 60px;
+}
+
+.footer-dow .link{
+    margin-right: 70px;
+    grid-area: storeLink;
+}
+
+.footer-dow .text{
+    margin-left: 50px;
+}
+
+.footer-dow .link .icon{
+    color: var(--button-color);
+    margin-right: 12px;
+}
+
+.footer-dow .link .icon:hover{
+    opacity: 0.8;
+}
+
+.container-footer-up{
+    display: grid;
+    grid-template-areas: "footerUpInfo footerUpInfo linkggMap linkggMap"
+                         "dt dt dt dt"
+                         "footerMainInfo menuItem1 menuItem2 menuItem3"
+                         "footerMainInfo menuItem4 menuItem5 dowLoad";
+    background-color: var(--footer-color);
+    padding: 30px 5% 10px 5%;
+}
+
+.link-notify img{
+    height: 37px;
+    width: 100px;
+}
+
+.store_img{
+    height: 37px;
+    width: 110px;
+    border-radius: 2px;
+}
+
+.for-mobile{
+    display: none;
+    grid-area: My_HYDRANGEA;
+}
+
+.mobile-showList{
+    display: none;
+}
+
+
+@media only screen and (max-width: 799px){
+    .footer{
+        font-size: 14px;
+    }
+
+    .container-footer-up{
+        grid-template-areas: "footerUpInfo linkggMap"
+                             "dt dt"
+                             "menuItem1 menuItem2"
+                             "menuItem3 menuItem4"
+                             "menuItem5 dowLoad"
+                             "footerMainInfo footerMainInfo";
+    }
+
+    .link-ggMap{
+       left: 100px;
+    }
+
+    .menu, .dowload{
+        margin-bottom: 25px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 477px){
+
+    .footer{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .for-mobile{
+        display: block;
+        color: var(--button-color);
+    }
+
+    .container-footer-up{
+        grid-template-areas: "My_HYDRANGEA"                              
+                              "address"
+                              "email"
+                              "phone"
+                              "menuItem1"
+                              "menuItem2"
+                              "menuItem3"
+                              "menuItem4"
+                              "menuItem5"
+                              "footerMainInfo";
+    }
+
+    .for-mobile > *{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .apple_store{
+      margin-right: 10px;
+    }
+
+    .for-mobile .link .link_item{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .for-mobile .link :hover{
+        background-color: var(--button-hover-color);
+    }
+
+    .link_item a .icon{
+        font-size: 17px;
+    }
+
+    .menu .link-item{
+        margin-left: 50px;
+        display: none;
+    }
+
+    .menu h3{
+        margin: 10px 0;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .mobile-showList, .close-list{
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .footer-dow .text{
+        font-size: 12px;
+        margin: auto;
+    }
+
+
+
+    .footer-up-info, .link-ggMap,
+    .dt, .footer-main-info .logo, .link-notify, .dowload, .footer-dow .link{
+        display: none;
+    }
+
+}
+
+
+/* ========================================FOOOTER End========================================= */
+
+
+/* Footer end */
+
+
+
+
+
+
+
 /* Start dang nhap-dang ky */
 #container {
     width: 100%;
