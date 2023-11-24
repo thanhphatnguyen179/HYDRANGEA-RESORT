@@ -28,32 +28,32 @@ var roomList = {
   "phong0001": {
     "name": "Phòng Superior",
     "price": 4934772,
-    "photo": "images/sanPham/phong1-1.jpg"
+    "photo": "images/san-pham/phong1-1.jpg"
   },
   "phong0002": {
     "name": "Phòng Larose",
     "price": 7991627,
-    "photo": "images/sanPham/phong2-1.jpg"
+    "photo": "images/san-pham/phong2-1.jpg"
   },
   "phong0003": {
     "name": "Phòng Suie Junior",
     "price": 11100622,
-    "photo": "images/sanPham/phong3-1.jpg"
+    "photo": "images/san-pham/phong3-1.jpg"
   },
   "canho0001": {
     "name": "Larose Master - 2 Phòng Ngủ",
     "price": 23497162,
-    "photo": "images/sanPham/canho1-1.jpg"
+    "photo": "images/san-pham/canho1-1.jpg"
   },
   "canho0002": {
     "name": "Larose Master - 3 Phòng Ngủ",
     "price": 32535993,
-    "photo": "images/sanPham/canho2-1.jpg"
+    "photo": "images/san-pham/canho2-1.jpg"
   },
   "bt000001": {
     "name": "Biệt Thự Hydranger - 1 Tầng",
     "price": 46077598,
-    "photo": "images/sanPham/bietthu1-1.jpg"
+    "photo": "images/san-pham/bietthu1-1.jpg"
   }
 };
 
