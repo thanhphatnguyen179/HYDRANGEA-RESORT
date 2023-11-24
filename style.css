@@ -49,10 +49,16 @@ body{
     overflow: hidden;
 }
 
+.lh_box #logo img{
+    position: absolute;
+    height: 13%;
+}
+
 .lh_box h1{
     padding: 3% 5%;
     margin-bottom: 0;
     color: var(--text-color);
+    margin: 0 30%;
 }
 
 .lh_box p{
@@ -118,8 +124,7 @@ body{
 .sticky {
     position: fixed;
     top: 0;
-    width: 60%;
-    margin-right: 0px;
+    left: 20vw;
 }
 
 #search-box .items{
@@ -180,7 +185,6 @@ body{
     color: var(--header-color);
 }
 /* Hoang Phuc ends*/
-
 
 /* S O N Starts*/
 /* Start CSS header and slider*/
