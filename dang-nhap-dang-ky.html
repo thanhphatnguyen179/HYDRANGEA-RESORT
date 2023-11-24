@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập/Đăng ký</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/94c20cd40c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="container">
+            <div class="form-box">
+                
+                <div class="button-box">
+                    <div id="button-color"></div>
+                    <button type="button" class="log-sign" onclick="login()"><strong>ĐĂNG NHẬP</strong></button>
+                    <button type="button" class="log-sign" onclick="signup()"><strong>ĐĂNG KÝ</strong></button>
+                </div>
+                <div id="logo">
+                    <a href="trang-chu.html"><img src="images/trang-chu/logo.png"></a>
+                </div>
+                <form id="login" class="input-box">               
+                    <input type="text" class="input-field" placeholder="Tên tài khoản" required>                   
+                    <input type="password" class="input-field" placeholder="Mật khẩu" required><br><br>
+                    <label class="check-box"><input type="checkbox"><span> Ghi nhớ cho lần đăng nhập sau</span></label><br><br>
+                    <a href="#">Bạn quên mật khẩu?</a>
+                    <button type="submit" class="submit-button">ĐĂNG NHẬP</button>
+                </form>
+                <form id="sign-up" class="input-box">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Tên tài khoản" required>                   
+                    <input type="password" class="input-field" placeholder="Mật khẩu" required>
+                    <div class="social-icons">Hoặc
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    </div><br><br>
+                    <label><input type="checkbox" class="check-box"> Tôi đồng ý với điều khoản & điều kiện</label>
+                    <button type="submit" class="submit-button">ĐĂNG KÝ</button>
+                </form>
+            </div>
+            
+        </div>
+        <script>
+            var a = document.getElementById("login");
+            var b = document.getElementById("sign-up");
+            var c = document.getElementById("button-color");
+
+            function login(){
+            a.style.left = "50px";
+            b.style.left = "750px";
+            c.style.left = "0";
+            }
+
+            function signup(){
+            a.style.left = "-400px";
+            b.style.left = "50px";
+            c.style.left = "140px";
+            }
+
+        </script>
+    </main>
+    <footer></footer>
+</body>
+</html>
