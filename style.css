@@ -1112,7 +1112,6 @@ section {
 }
 
 /* cautruyen ends */
-
 /* section sanPham starts */
 
 
@@ -1446,3 +1445,235 @@ section {
     
 }
 /* Phat 2k3 ends */
+/* Hien Le AKA guboiz 2k3 Start  */
+/* Gioi Thieu Start */
+/* modau start */
+.btn {
+    display: inline-block;
+    background: #e4f3b6;
+    margin-top: 1rem;
+    color: #000000;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #abd641;
+}
+
+section {
+    padding: 0 5rem;
+}
+.heading {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: auto;
+    background: url(./images/gioiThieu/header.jpg);
+
+}
+
+#page-header {
+    background-image: url(./images/gioiThieu/header.jpg);
+    width: 100%;
+    height:  80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.lopphu {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height:  80vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#page-header h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    object-fit: cover;
+
+    z-index: 100;
+}
+
+#page-header p{
+    color: #9B72F2;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 100;
+}
+/* mo dau end */
+
+/* Header Start */
+
+/* Header End */
+
+/*section tong Quan starts*/
+
+#tong-quan h2 {
+    text-align: center;
+    font: 800;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+#tong-quan .tq-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+#tong-quan .tq-box .tq-img {
+    width: 40%;
+    margin-right: 40px;
+    
+}
+#tong-quan img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+#tong-quan .tq-box .tq-content {
+    width: 60%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#tong-quan .tq-box .tq-content p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/*section tong Quan ends*/
+
+/* cauchuyen starts */
+#cauchuyen {
+    margin-top: 5rem;
+    padding: 5% 10%;
+    background-color: rgba(7, 102, 173, 0.5);
+    color: #000000;
+}
+#cauchuyen h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+#cauchuyen .ch-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+#cauchuyen .ch-box .ch-img{
+    width: 40%;
+    margin-right: 40px;
+    
+}
+#cauchuyen img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+#cauchuyen .ch-box .ch-content {
+    width: 60%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#cauchuyen .ch-box .ch-content p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+/* cauchuyen end */
+
+/* Dich Vu Chinh Stars */
+.intro-container{
+    padding: 5%;
+}
+
+.intro-title{
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--header-color);    
+}
+.service-main .title{
+    text-align: center;
+    color: var(--header-color);
+    margin: 50px 0 30px 0;
+}
+
+.service-main .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service .text{
+    display: block;
+    border: 1rem;
+    text-indent: 60px;
+    text-align: justify;
+    width: 500px;
+    background-color: #e4f3b6;
+}
+
+.slider-service{
+    position: relative;
+    left: 60px; 
+    grid-area: sliderService;
+}
+
+.slider-service .slider-service-img1, .slider-service-img2, .slider-service-img3, .slider-service-img4{
+    height: 380px;
+    width: 480px;
+    border-radius: 5px;
+}
+
+.list-service{
+    grid-area: listService;
+}
+
+.list-service-item{
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.list-service-item i{
+    cursor: pointer;
+}
+
+.list-service-item:hover a, .list-service-item:hover i{
+    color: var(--button-hover-color);
+}
+
+.service-main #text{
+    text-indent: 60px;
+    text-align: justify;
+    width: 350px;    
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: textServiceMain;
+}
+/* Dich Vu CHinh End */
+/* Gioi Thieu End */
+/* Hien Le AKA guboiz 2k3 End  */
