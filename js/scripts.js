@@ -260,3 +260,101 @@ function myFunction() {
 // End Responsive of Navigation
 
 // S O N 2k20 end
+
+// Hien Le( 2k3 gia roi gio tao ki nguc 2k5) =))
+// Start Gioi Thieu
+$(document).ready(function(){
+var text1 = "Với tiêu chí không những để vui mà còn là vì sức khỏe Hydrangea Resort có cả bãi xe đạp cho du khách thuê để chạy vòng quang đường núi ngắm nhìn vẻ đẹp hoang sơ ở nơi đây, ngoài ra còn có cả thuyền sup cho du khách có cơ hội ngăm nhìn hoàng hôn từ hồ nước.";
+var text2 = "Với đội ngũ dày dặn kinh nghiệm sẽ mang đến cho mọi người trải nghiệm thoải mái nhất khi đến với resort, tại đây có các dịch vụ như gội đầu dưỡng sinh, massage toàn thân, đặc biệt là có phòng xông hơi giúp du khách hài lòng về resort của chúng tôi.";
+var text3 = "Với thiết kế chuẩ Châu Âu sẽ mang lại cho du khách cảm giác sang trọng nhưng không kém phần lãng mạng. Đến với Hydrangea Resort đội ngũ đầu bếp có tay nghề và kinh nghiệm dồi dào sẽ mang lại cho du khách những món ăn có thể nói là Mĩ vị nhân gian.";
+var text4 = "Một ly cocktail kết thúc cho một ngày dài là một trải nghiệm hoàn toàn thực tế, ở tại nơi đây có tới 50 món đồ uống khác nhau. Đặt biệt mỗi tối thứ 7 hàng tuần sẽ có live band tại Resort với những ca sĩ có giọng ca say đắm lòng. ";
+var speed = 10;
+
+var i = 0;
+var check = true;
+
+function typeWriter(txt) {
+  if (i < txt.length && check == true) {
+    document.getElementById("text").innerHTML += txt.charAt(i);
+    ++i;
+    setTimeout(function(){
+      typeWriter(txt);
+    }, speed);
+  }else{
+    i = 0;
+  }
+}
+
+function showMessage(txt){
+  check = true;
+  $("#text").css({"display" : "block", "border" : "1px solid", "background-color" : "var(--header-color)"});
+  $("#text").animate(typeWriter(txt));   
+}
+
+function closeMessage(){
+  check = false;
+  document.getElementById("text").innerHTML = "";
+  $("#text").css({"display" : "block", "border" : "0px solid", "background-color" : "#e4f3b6"});
+}
+
+var slideIndex = 0;
+showDivs(slideIndex);
+
+carousel();
+
+function plusDiv(n) {
+  showDivs(slideIndex += n);
+}
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+$(".service-1").hover(function(){
+  showMessage(text1);
+}, function(){
+  closeMessage();
+});
+
+
+$(".service-2").hover(function(){
+  showMessage(text2);
+}, function(){
+  closeMessage();
+});
+
+$(".service-3").hover(function(){
+  showMessage(text3);
+}, function(){
+  closeMessage();
+});
+
+
+$(".service-4").hover(function(){
+  showMessage(text4);
+}, function(){
+  closeMessage();
+});
+});
+// End Gioi Thieu
