@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html class="lh_html">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Liên hệ</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <link rel="stylesheet" href="style.css">
@@ -35,21 +36,21 @@
                 <form>
                     <table>
                         <tr>
-                            <td><div class="label-color"><label for="name">Tên</label></div></td>
-                            <td><input id="name" type="text" name="name" placeholder="Vui lòng nhập họ tên của bạn" required/></td>
+                            <td><div class="label-color"><label for="lh_name">Tên</label></div></td>
+                            <td><input id="lh_name" type="text" name="name" placeholder="Vui lòng nhập họ tên của bạn" onchange="lh_namef()" required/></td>
                         </tr>
                         <tr>
-                            <td><div class="label-color"><label for="email">Email</label></div></td>
-                            <td><input id="email" type="text" name="email" placeholder="Vui lòng nhập địa chỉ Email" required/></td>
+                            <td><div class="label-color"><label for="lh_email">Email</label></div></td>
+                            <td><input id="lh_email" type="text" name="email" placeholder="Vui lòng nhập địa chỉ Email" onchange="lh_emailf()" required/></td>
                         </tr>
                         
                         <tr>
-                            <td><div class="label-color"><label for="details">Nội dung</label></div></td>
-                            <td><textarea id="details" rows="7" cols="50" type="text" name="details" placeholder="Ví dụ: Có dịch vụ dọn phòng không?" required></textarea></td>
+                            <td><div class="label-color"><label for="lh_details">Nội dung</label></div></td>
+                            <td><textarea id="lh_details" rows="7" cols="50" type="text" name="details" placeholder="Ví dụ: Có dịch vụ dọn phòng không?" onchange="lh_contentf()" required></textarea></td>
                         </tr>
                     </table>
                     <div class="button">
-                        <td><input type="submit" value="Gửi"></td>
+                        <td><input type="submit" value="Gửi" onclick="lh_gui()"></td>
                         <td><input type="reset" value="Huỷ"></td>
                     </div>
                 </form>
@@ -66,6 +67,6 @@
 
         
 
-        
+        <script src="js/scripts.js"></script>
     </body>
 </html>
