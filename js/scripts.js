@@ -437,7 +437,10 @@ function lh_namef(){
 
 function lh_emailf(){
     let lh_email = document.getElementById("lh_email").value;
-    return lh_email;
+    if(lh_email.indexOf("@") != -1)
+      return lh_email;
+    else
+      return "";
 }
 
 function lh_contentf(){
