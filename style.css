@@ -13,6 +13,37 @@ body{
     border: 0;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+
+
 /* S O N Starts*/
 /* Start CSS header and slider*/
 
@@ -179,113 +210,6 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    #tc-header #tc-header-container .navi-left,
-    #tc-header #tc-header-container .navi-right {
-        padding: 0;
-    }
-
-    #tc-header #tc-header-container .navi-left {
-        width: 49%;
-    }
-
-    #tc-header #tc-header-container #tc-logo {
-        left: 49%;
-    }
-}
-
-@media (max-width: 799px) {
-    #tc-header #tc-header-container .navi-left,
-    #tc-header #tc-header-container .navi-right {
-        margin-top: 30px;
-        width: 40%;
-    }
-
-    #tc-header #tc-header-container #tc-logo {
-        left: 43%;
-    }
-}
-
-@media (max-width: 477px) {
-
-    #search-box {
-        width: 100vw;
-        min-width: 0px;
-    }
-
-    .navi-left a, .navi-right a {display: none;}
-
-    #tc-header #tc-header-container .icon {
-        font-size: 20px;
-        float: left;
-        display: block;
-        position: relative;
-        top: 25px;
-        z-index: 5;
-    }
-
-    .tc-slider .tc-log {
-        top: 30px;
-        right: 0;
-        padding: 0px;
-        margin: 2px;
-    }
-
-    #tc-header #tc-header-container #tc-logo {
-        left: 39%;
-        bottom: 15px;
-    }
-
-    #tc-header #tc-header-container #tc-logo img {
-        width: 6rem;
-        height: 6rem;
-    }
-
-    .myNavi .navi-left.responsive,
-    .myNavi .navi-right.responsive {
-        background-color: #ffffff;
-        position: relative;
-    }
-
-    .myNavi.responsive .icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    #tc-header #tc-header-container .navi-left,
-    #tc-header #tc-header-container .navi-right {
-        display: block;
-        padding: 0;
-        width: 100%;
-        transition: 0.5s;
-        margin-top: 0;
-    }
-
-    .navi-left.responsive a,
-    .navi-right.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    #tc-header #tc-header-container .navi-left a,
-    #tc-header #tc-header-container .navi-right a {
-        padding: 10px 20px;
-        color: #000000;
-        transition: 0.5s;
-    }
-
-    #tc-header #tc-header-container .myNavi {
-        width: 100vw;
-        margin-top: 30px;
-    }
-
-    #tc-header #tc-header-container .navi-left a:hover,
-    #tc-header #tc-header-container .navi-right a:hover {
-        background-color: var(--button-hover-color);
-    }
-}
 /* End responsive header */
 
 
@@ -493,146 +417,6 @@ body{
 }
 
 
-@media only screen and (max-width: 1150px){
-    .footer{
-        font-size: 17px;
-    }
-    
-    .container-footer-up{
-        grid-template-areas: "footerUpInfo linkggMap"
-                             "dt dt"
-                             "menuItem1 menuItem2"
-                             "menuItem3 menuItem4"
-                             "menuItem5 dowLoad"
-                             "footerMainInfo footerMainInfo";
-    }
-    
-}
-
-
-@media only screen and (max-width: 832px){
-    .footer{
-        font-size: 16px;
-    }
-
-    .container-footer-up{
-        grid-template-areas: "footerUpInfo linkggMap"
-                             "dt dt"
-                             "menuItem1 menuItem2"
-                             "menuItem3 menuItem4"
-                             "menuItem5 dowLoad"
-                             "footerMainInfo footerMainInfo";
-    }
-
-    .link-ggMap{
-       left: 100px;
-    }
-
-    .menu, .dowload{
-        margin-bottom: 25px;
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .footer-dow .link{
-        position: relative;
-        width: 150px;
-        left: 60px;
-    }
-
-
-
-}
-
-
-
-
-
-@media only screen and (max-width: 477px){
-
-    .footer{
-        font-size: 15px;
-        width: 100%;
-    }
-
-    .for-mobile{
-        display: block;
-        color: var(--button-color);
-    }
-
-    .container-footer-up{
-        grid-template-areas: "My_HYDRANGEA"                              
-                              "address"
-                              "email"
-                              "phone"
-                              "menuItem1"
-                              "menuItem2"
-                              "menuItem3"
-                              "menuItem4"
-                              "menuItem5"
-                              "footerMainInfo";
-    }
-
-    .for-mobile > *{
-        display: flex;
-        margin-bottom: 10px;
-    }
-
-    .apple_store{
-      margin-right: 10px;
-    }
-
-    .for-mobile .link .link_item{
-        width: 30px;
-        height: 30px;
-        background-color: #fff;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-    }
-
-    .for-mobile .link :hover{
-        background-color: var(--button-hover-color);
-    }
-
-    .link_item a .icon{
-        font-size: 17px;
-    }
-
-    .menu .link-item{
-        margin-left: 50px;
-        display: none;
-    }
-
-    .menu h3{
-        margin: 10px 0;
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    .mobile-showList, .close-list{
-        display: inline-block;
-        margin-left: 5px;
-        cursor: pointer;
-    }
-
-    .footer-dow .text{
-        font-size: 12px;
-        margin: auto;
-    }
-
-
-
-    .footer-up-info, .link-ggMap,
-    .dt, .footer-main-info .logo, .link-notify, .dowload, .footer-dow .link{
-        display: none;
-    }
-
-}
 
 
 /* ========================================FOOOTER End========================================= */
@@ -754,77 +538,11 @@ body{
     left: 35%;
 }
 
-@media only screen and (max-width: 477px) {
-    .form-box {
-        width: 100vw;
-        height: 95%;
-        border-radius: 10px;
-        position: relative;
-        margin: 6% auto;
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .2);
-        backdrop-filter: blur(10px);
-        padding: 5px;
-        overflow: hidden;
-    }
-
-    .input-box {
-        position: absolute;
-        top: 140px;
-        width: 330px;
-        left: 50px;
-        transition: 0.5s;
-    }
-
-    .social-icons {
-        left: 20%;
-    }
-
-    #sign-up .submit-button {
-        margin-top: 30px;
-    }
-
-    #login a {
-        margin-right: 60px;
-    }
-}
 /* End dang nhap-dang ky */
 /* S O N ends*/
 
 
 /* Phat 2k3 Starts*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-html {
-    overflow-x: hidden;
-}
-
-html::-webkit-scrollbar {
-    width: .5rem;
-}
-
-html::-webkit-scrollbar-track {
-    background-color: white;
-}
-
-
-html::-webkit-scrollbar-thumb {
-    background-color: black;
-}
-
 
 .btn {
     display: inline-block;
@@ -843,146 +561,7 @@ html::-webkit-scrollbar-thumb {
 section {
     padding: 0 5rem;
 }
-.heading {
-    background-size: cover !important;
-    background-position: center !important;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-    padding-left: 5rem;
-    display: flex;
-    align-items: center;    
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-basis: auto;
-    background: url(images/gioiThieu/pic_2.jpg);
 
-}
-
-.heading h1{
-    /* font-size: 5rem;
-    text-transform: uppercase;
-    color: white;
-    box-shadow: 0 1.5rem 3rem rgba(0,0,0,.3); */
-
-    font-size: 5rem;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    object-fit: cover;
-    
-    /* box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); */
-}
-.heading p {
-    font-size: 2rem;
-    color: white;
-    text-transform: inherit;
-}
-
-
-
-#page-header {
-    background-image: url(./images/gioiThieu/pic_2.jpg);
-    width: 100%;
-    height:  80vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-position: center;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.lopphu {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    width: 100%;
-    height:  80vh;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-#page-header h2 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    object-fit: cover;
-
-    z-index: 100;
-}
-
-#page-header p{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    z-index: 100;
-}
-
-
-
-/*section tong Quan starts*/
-
-#tong-quan h2 {
-    text-align: center;
-    font: 800;
-    font-size: 2rem;
-    margin: 2rem 0;
-}
-#tong-quan .tq-box {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-}
-#tong-quan .tq-box .tq-img {
-    width: 40%;
-    margin-right: 40px;
-    
-}
-#tong-quan img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 2rem;
-}
-#tong-quan .tq-box .tq-content {
-    width: 60%;
-}
-#tong-quan .tq-box .tq-content p {
-    text-align: justify;
-    font-size: 1.5rem;
-    line-height: 1;
-}
-
-/*section tong Quan ends*/
-
-
-/* cau-chuyen starts */
-.cau-chuyen {
-    margin-top: 5rem;
-    padding: 5% 10%;
-    background-color: #0766AD;
-    color: #FFFFFF;
-}
-.cau-chuyen h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
-}
-.cau-chuyen p {
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 1.2;
-}
-
-/* cautruyen ends */
 /* section sanPham starts */
 
 
@@ -1161,395 +740,7 @@ section {
 
 /*giohang ends*/
 
-
-
-@media (max-width: 799px) {
-    html {
-        font-size: 62.5%;
-    }
-    #page-header h2 {
-        font-size: 2.5rem;
-    }
-    #page-header p {
-        font-size: 1.5rem;
-    }
-    #tong-quan {
-        padding: 0;
-    }
-    #tong-quan h2 {
-        text-align: center;
-        font: 800;
-        font-size: 2rem;
-        margin: 2rem 0;
-    }
-
-    #tong-quan .tq-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 3rem;
-    }
-    #tong-quan .tq-box .tq-img {
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-    #tong-quan img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-    #tong-quan .tq-box .tq-content {
-        padding-top: 2rem;
-        width: 100%;
-    }
-    #tong-quan .tq-box .tq-content p {
-        padding: 2rem 5rem;
-        text-align: justify;
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
-}
-@media (max-width: 477px)  {
-
-    #tong-quan img {
-
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-
-    #pro-details {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-    #pro-details .single-pro-image {
-        width: 100%;
-        margin-right: 50px;
-    }
-    #pro-details .single-pro-image img {
-        width: 100%;
-    }
-    
-    #pro-details .single-pro-image .small-img-group {
-        display: flex;
-        justify-content: space-between;
-        gap: 3%;
-    }
-    
-    #pro-details .single-pro-image .small-img-col {
-        flex-basis: 24%;
-        cursor: pointer;
-      }
-    
-    #pro-details .single-pro-details {
-        width: 100%;
-    }
-    
-    #pro-details .single-pro-details h1 {
-        padding: 1rem 0;
-        font-size: 2rem;
-    }
-    
-    #pro-details .single-pro-details h2 {
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
-    
-    
-    
-    #pro-details .single-pro-details input {
-        width: 4rem;
-        height: 2rem;
-        padding-left: 10px;
-        font-size: 1rem;
-        margin-right: 1rem;
-    }
-    #pro-details .single-pro-details input:focus {
-        outline: none;  
-    }
-    
-    
-    #pro-details .single-pro-details button{
-        background-color: #088178;
-        color: #fff;
-    }
-    
-    #pro-details .single-pro-details p{
-        padding: 1rem 0;
-        line-height: 1.2;
-        text-align: justify;
-    }
-      
-    #pro-details .single-pro-details .sp-icons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    #pro-details .single-pro-details .sp-icons .icons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #088178;
-        width: 30%;
-        border-radius: 1rem;
-        color: #fff;
-        padding: 1rem;
-    }
-    #pro-details .single-pro-details .sp-icons .icons i {
-        padding-top: 1.5rem;
-    
-        font-size: 1.5rem;
-    }
-    #pro-details .single-pro-details .sp-icons .icons span {
-        padding-top: 1.5rem;
-        font-size: 0.75rem;
-    }
-    
-}
 /* Phat 2k3 ends */
-/* Hien Le AKA guboiz 2k3 Start  */
-/* Gioi Thieu Start */
-/* modau start */
-.btn {
-    display: inline-block;
-    background: #e4f3b6;
-    margin-top: 1rem;
-    color: #000000;
-    font-size: 1.7rem;
-    padding: 1rem 2rem;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #abd641;
-}
-
-section {
-    padding: 0 5rem;
-}
-.heading {
-    background-size: cover !important;
-    background-position: center !important;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-    padding-left: 5rem;
-    display: flex;
-    align-items: center;    
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-basis: auto;
-    background: url(./images/gioiThieu/header.jpg);
-
-}
-
-#page-header {
-    background-image: url(./images/gioiThieu/header.jpg);
-    width: 100%;
-    height:  80vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-position: center;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.lopphu {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    width: 100%;
-    height:  80vh;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-#page-header h2 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    object-fit: cover;
-
-    z-index: 100;
-}
-
-#page-header p{
-    color: #9B72F2;
-    font-size: 1.5rem;
-    font-weight: 600;
-    z-index: 100;
-}
-/* mo dau end */
-
-/* Header Start */
-
-/* Header End */
-
-/*section tong Quan starts*/
-
-#tong-quan h2 {
-    text-align: center;
-    font: 800;
-    font-size: 2rem;
-    margin: 2rem 0;
-}
-#tong-quan .tq-box {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-}
-#tong-quan .tq-box .tq-img {
-    width: 40%;
-    margin-right: 40px;
-    
-}
-#tong-quan img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 2rem;
-}
-#tong-quan .tq-box .tq-content {
-    width: 60%;
-   font-family: Arial, Helvetica, sans-serif;
-}
-#tong-quan .tq-box .tq-content p {
-    text-align: justify;
-    font-size: 1.5rem;
-    line-height: 1;
-}
-
-/*section tong Quan ends*/
-
-/* cauchuyen starts */
-#cauchuyen {
-    margin-top: 5rem;
-    padding: 5% 10%;
-    background-color: rgba(7, 102, 173, 0.5);
-    color: #000000;
-}
-#cauchuyen h2{
-    font-size: 2rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
-}
-#cauchuyen .ch-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-}
-#cauchuyen .ch-box .ch-img{
-    width: 40%;
-    margin-right: 40px;
-    
-}
-#cauchuyen img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 2rem;
-}
-#cauchuyen .ch-box .ch-content {
-    width: 60%;
-   font-family: Arial, Helvetica, sans-serif;
-}
-#cauchuyen .ch-box .ch-content p {
-    text-align: justify;
-    font-size: 1.5rem;
-    line-height: 1;
-}
-/* cauchuyen end */
-
-/* Dich Vu Chinh Stars */
-.intro-container{
-    padding: 5%;
-}
-
-.intro-title{
-    margin-top: 2rem;
-    text-align: center;
-    color: var(--header-color);    
-}
-.service-main .title{
-    text-align: center;
-    color: var(--header-color);
-    margin: 50px 0 30px 0;
-}
-
-.service-main .content{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.service .text{
-    display: block;
-    border: 1rem;
-    text-indent: 60px;
-    text-align: justify;
-    width: 500px;
-    background-color: #e4f3b6;
-}
-
-.slider-service{
-    position: relative;
-    left: 60px; 
-    grid-area: sliderService;
-}
-
-.slider-service .slider-service-img1, .slider-service-img2, .slider-service-img3, .slider-service-img4{
-    height: 380px;
-    width: 480px;
-    border-radius: 5px;
-}
-
-.list-service{
-    grid-area: listService;
-}
-
-.list-service-item{
-    font-size: 20px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-
-.list-service-item i{
-    cursor: pointer;
-}
-
-.list-service-item:hover a, .list-service-item:hover i{
-    color: var(--button-hover-color);
-}
-
-.service-main #text{
-    text-indent: 60px;
-    text-align: justify;
-    width: 350px;    
-    padding: 25px;
-    border-radius: 5px;
-    grid-area: textServiceMain;
-}
-/* Dich Vu CHinh End */
-/* Gioi Thieu End */
-/* Hien Le AKA guboiz 2k3 End  */
-
-
 
 
 
@@ -1673,49 +864,6 @@ section {
                          "newItem7 newItem8";
 }
 
-
-@media only screen and (max-width: 799px){
-    .new-item-container{
-        grid-template-areas: "newRelax"
-                             "newItem1"
-                             "newItem2"
-                             "newPlay"
-                             "newItem3"
-                             "newItem4"
-                             "newMeeting"
-                             "newItem5"
-                             "newItem6"
-                             "newGradent"
-                             "newItem7"
-                             "newItem8";
-    }
-
-    .new-item{
-        display: block;
-        margin-right: 40px;
-    }
-
-    .new-item-img{
-        height: 50vw;
-        width: 90vw;
-    }
-
-    .new-container{
-        font-size: 15px;
-    }
-
-    .new-item p{
-        width: 100%;
-    }
-
-    .item-title{
-        width: 100%;
-        text-align: center;
-        position: relative;
-        right: 20px;
-    }
-
-}
 
 
 /* ==============================================Tin tức end========================================= */
@@ -1911,7 +1059,64 @@ section {
     color: var(--header-color);
 }
 
-@media (max-width: 1200px){
+
+
+
+
+/* Hoang Phuc ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    #tc-header #tc-header-container .navi-left,
+    #tc-header #tc-header-container .navi-right {
+        padding: 0;
+    }
+
+    #tc-header #tc-header-container .navi-left {
+        width: 49%;
+    }
+
+    #tc-header #tc-header-container #tc-logo {
+        left: 49%;
+    }
     .lh_box {
         margin-left: auto;
         margin-right: auto;
@@ -1950,7 +1155,163 @@ section {
     }
 }
 
-@media (max-width: 799px){
+
+
+@media only screen and (max-width: 1150px){
+    .footer{
+        font-size: 17px;
+    }
+    
+    .container-footer-up{
+        grid-template-areas: "footerUpInfo linkggMap"
+                             "dt dt"
+                             "menuItem1 menuItem2"
+                             "menuItem3 menuItem4"
+                             "menuItem5 dowLoad"
+                             "footerMainInfo footerMainInfo";
+    }
+    
+}
+
+
+@media only screen and (max-width: 832px){
+    .footer{
+        font-size: 16px;
+    }
+
+    .container-footer-up{
+        grid-template-areas: "footerUpInfo linkggMap"
+                             "dt dt"
+                             "menuItem1 menuItem2"
+                             "menuItem3 menuItem4"
+                             "menuItem5 dowLoad"
+                             "footerMainInfo footerMainInfo";
+    }
+
+    .link-ggMap{
+       left: 100px;
+    }
+
+    .menu, .dowload{
+        margin-bottom: 25px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .footer-dow .link{
+        position: relative;
+        width: 150px;
+        left: 60px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 799px) {
+    #tc-header #tc-header-container .navi-left,
+    #tc-header #tc-header-container .navi-right {
+        margin-top: 30px;
+        width: 40%;
+    }
+
+    #tc-header #tc-header-container #tc-logo {
+        left: 43%;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+    #page-header h2 {
+        font-size: 2.5rem;
+    }
+    #page-header p {
+        font-size: 1.5rem;
+    }
+    #tong-quan {
+        padding: 0;
+    }
+    #tong-quan h2 {
+        text-align: center;
+        font: 800;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    #tong-quan .tq-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    #tong-quan .tq-box .tq-img {
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    #tong-quan img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    #tong-quan .tq-box .tq-content {
+        padding-top: 2rem;
+        width: 100%;
+    }
+    #tong-quan .tq-box .tq-content p {
+        padding: 2rem 5rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+
+    .new-item-container{
+        grid-template-areas: "newRelax"
+                             "newItem1"
+                             "newItem2"
+                             "newPlay"
+                             "newItem3"
+                             "newItem4"
+                             "newMeeting"
+                             "newItem5"
+                             "newItem6"
+                             "newGradent"
+                             "newItem7"
+                             "newItem8";
+    }
+
+    .new-item{
+        display: block;
+        margin-right: 40px;
+    }
+
+    .new-item-img{
+        height: 50vw;
+        width: 90vw;
+    }
+
+    .new-container{
+        font-size: 15px;
+    }
+
+    .new-item p{
+        width: 100%;
+    }
+
+    .item-title{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 20px;
+    }
     html{
         font-size: 62.5%;
     }
@@ -2010,7 +1371,299 @@ section {
     }
 }
 
-@media (max-width: 477px){
+@media (max-width: 477px) {
+
+    #search-box {
+        width: 100vw;
+        min-width: 0px;
+    }
+
+    .navi-left a, .navi-right a {display: none;}
+
+    #tc-header #tc-header-container .icon {
+        font-size: 20px;
+        float: left;
+        display: block;
+        position: relative;
+        top: 25px;
+        z-index: 5;
+    }
+
+    .tc-slider .tc-log {
+        top: 30px;
+        right: 0;
+        padding: 0px;
+        margin: 2px;
+    }
+
+    #tc-header #tc-header-container #tc-logo {
+        left: 39%;
+        bottom: 15px;
+    }
+
+    #tc-header #tc-header-container #tc-logo img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .myNavi .navi-left.responsive,
+    .myNavi .navi-right.responsive {
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    .myNavi.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #tc-header #tc-header-container .navi-left,
+    #tc-header #tc-header-container .navi-right {
+        display: block;
+        padding: 0;
+        width: 100%;
+        transition: 0.5s;
+        margin-top: 0;
+    }
+
+    .navi-left.responsive a,
+    .navi-right.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #tc-header #tc-header-container .navi-left a,
+    #tc-header #tc-header-container .navi-right a {
+        padding: 10px 20px;
+        color: #000000;
+        transition: 0.5s;
+    }
+
+    #tc-header #tc-header-container .myNavi {
+        width: 100vw;
+        margin-top: 30px;
+    }
+
+    #tc-header #tc-header-container .navi-left a:hover,
+    #tc-header #tc-header-container .navi-right a:hover {
+        background-color: var(--button-hover-color);
+    }
+
+    .footer{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .for-mobile{
+        display: block;
+        color: var(--button-color);
+    }
+
+    .container-footer-up{
+        grid-template-areas: "My_HYDRANGEA"                              
+                              "address"
+                              "email"
+                              "phone"
+                              "menuItem1"
+                              "menuItem2"
+                              "menuItem3"
+                              "menuItem4"
+                              "menuItem5"
+                              "footerMainInfo";
+    }
+
+    .for-mobile > *{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .apple_store{
+      margin-right: 10px;
+    }
+
+    .for-mobile .link .link_item{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .for-mobile .link :hover{
+        background-color: var(--button-hover-color);
+    }
+
+    .link_item a .icon{
+        font-size: 17px;
+    }
+
+    .menu .link-item{
+        margin-left: 50px;
+        display: none;
+    }
+
+    .menu h3{
+        margin: 10px 0;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .mobile-showList, .close-list{
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .footer-dow .text{
+        font-size: 12px;
+        margin: auto;
+    }
+
+
+
+    .footer-up-info, .link-ggMap,
+    .dt, .footer-main-info .logo, .link-notify, .dowload, .footer-dow .link{
+        display: none;
+    }
+
+
+
+    .form-box {
+        width: 100vw;
+        height: 95%;
+        border-radius: 10px;
+        position: relative;
+        margin: 6% auto;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .input-box {
+        position: absolute;
+        top: 140px;
+        width: 330px;
+        left: 50px;
+        transition: 0.5s;
+    }
+
+    .social-icons {
+        left: 20%;
+    }
+
+    #sign-up .submit-button {
+        margin-top: 30px;
+    }
+
+    #login a {
+        margin-right: 60px;
+    }
+
+    #tong-quan img {
+
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    #pro-details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    #pro-details .single-pro-image {
+        width: 100%;
+        margin-right: 50px;
+    }
+    #pro-details .single-pro-image img {
+        width: 100%;
+    }
+    
+    #pro-details .single-pro-image .small-img-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 3%;
+    }
+    
+    #pro-details .single-pro-image .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+      }
+    
+    #pro-details .single-pro-details {
+        width: 100%;
+    }
+    
+    #pro-details .single-pro-details h1 {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+    
+    #pro-details .single-pro-details h2 {
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+    
+    
+    
+    #pro-details .single-pro-details input {
+        width: 4rem;
+        height: 2rem;
+        padding-left: 10px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    #pro-details .single-pro-details input:focus {
+        outline: none;  
+    }
+    
+    
+    #pro-details .single-pro-details button{
+        background-color: #088178;
+        color: #fff;
+    }
+    
+    #pro-details .single-pro-details p{
+        padding: 1rem 0;
+        line-height: 1.2;
+        text-align: justify;
+    }
+      
+    #pro-details .single-pro-details .sp-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    #pro-details .single-pro-details .sp-icons .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #088178;
+        width: 30%;
+        border-radius: 1rem;
+        color: #fff;
+        padding: 1rem;
+    }
+    #pro-details .single-pro-details .sp-icons .icons i {
+        padding-top: 1.5rem;
+    
+        font-size: 1.5rem;
+    }
+    #pro-details .single-pro-details .sp-icons .icons span {
+        padding-top: 1.5rem;
+        font-size: 0.75rem;
+    }
     .lh_body{
         font-size: 145%;
     }
@@ -2083,13 +1736,6 @@ section {
         gap: 5%;
     }
 }
-/* Hoang Phuc ends*/
-
-
-
-
-
-
 
 
 
