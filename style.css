@@ -756,8 +756,9 @@ body{
 }
 
 .footer-dow .link .icon{
-    color: var(--button-color);
     margin-right: 12px;
+    height: 20px;
+    width: 20px;
 }
 
 .footer-dow .link .icon:hover{
@@ -795,9 +796,26 @@ body{
 }
 
 
-@media only screen and (max-width: 799px){
+@media only screen and (max-width: 1150px){
     .footer{
-        font-size: 14px;
+        font-size: 17px;
+    }
+    
+    .container-footer-up{
+        grid-template-areas: "footerUpInfo linkggMap"
+                             "dt dt"
+                             "menuItem1 menuItem2"
+                             "menuItem3 menuItem4"
+                             "menuItem5 dowLoad"
+                             "footerMainInfo footerMainInfo";
+    }
+    
+}
+
+
+@media only screen and (max-width: 832px){
+    .footer{
+        font-size: 16px;
     }
 
     .container-footer-up{
@@ -821,7 +839,18 @@ body{
         display: none;
     }
 
+    .footer-dow .link{
+        position: relative;
+        width: 150px;
+        left: 60px;
+    }
+
+
+
 }
+
+
+
 
 
 @media only screen and (max-width: 477px){
@@ -911,8 +940,6 @@ body{
 
 /* ========================================FOOOTER End========================================= */
 
-
-/* Footer end */
 
 
 
