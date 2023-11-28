@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   submit.addEventListener("click", function() {
 
-    var check = document.querySelector("#cartDetail tbody");
+    var check = document.querySelector("#cartDetail tbody td");
     if (check === null || check === undefined)
       alert("Không thể xác nhận đơn hàng, do không có đơn hàng nào được chọn");
     else {
