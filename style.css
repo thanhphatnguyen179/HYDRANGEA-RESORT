@@ -1749,3 +1749,247 @@ section {
 
 
 
+
+
+
+
+/* ================================================== Giới thiệu start =============================================== */
+
+.intro-container{
+    padding: 5%;
+}
+
+
+.intro-title{
+    text-align: center;  
+}
+
+.overview-resort .title, 
+.architecture .title,
+.brand-story .title,
+.service .title,
+.service-main .title{
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+
+
+.overview-resort .content,
+.architecture  .content,
+.brand-story .content,
+.service .content,
+.service-main .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overview-resort .text,
+.architecture .text,
+.brand-story .text,
+.service .text{
+    text-indent: 60px;
+    text-align: justify;
+    width: 500px;
+}
+
+.overview-img,
+.architecture-img,
+.brand-img,
+.service-img,
+.slider-service, .slider-service-img1, .slider-service-img2, .slider-service-img3{
+    height: 380px;
+    width: 480px;
+    border-radius: 2rem;
+}
+
+
+
+.architecture .content,
+.service .content{
+    flex-direction: row-reverse;
+}
+
+.service .text-item{
+    margin-bottom: 10px;
+}
+
+.list-service{
+    grid-area: listService;
+}
+
+
+.list-service-item{
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.slider-service{
+    position: relative;
+    left: 60px; 
+    grid-area: sliderService;
+}
+
+.list-service-item i{
+    cursor: pointer;
+}
+
+.list-service-item:hover a,
+.list-service-item:hover i{
+    color: var(--button-hover-color);
+}
+
+.service-main #text{
+    text-indent: 60px;
+    text-align: justify;
+    width: 350px;    
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: textServiceMain;
+}
+
+.content .text{
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width: 1100px){
+
+    #page-header h2{
+        font-size: 4rem;
+    }
+
+    .content img{
+        width: 360px;
+    }
+
+    .khoangCach{
+        margin: 0 20px;
+    }
+
+    .slider-service{
+        margin-right: 30px;
+        height: 360px;
+    }
+
+    #text{
+        width: 300px;
+    }
+}
+
+
+
+@media only screen and (max-width: 799px) {
+
+    .overview-resort .content,
+    .architecture  .content,
+    .brand-story .content,
+    .service .content,
+    .service-main .content{
+        display: block;
+    }
+
+    .overview-img,
+    .architecture-img,
+    .brand-img,
+    .service-img,
+    .slider-service-img2, .slider-service-img3, .slider-service-img1, .content img{
+        height: 280px;
+        width: 100%;
+    }
+
+    .slider-service{
+        width: 80%;
+        margin-right: 30px;
+        min-width: 300px;
+    }
+
+    .service-main .content{
+        display: grid;
+        grid-template-areas: "listService textServiceMain"
+                             "sliderService sliderService";
+    }
+
+    .service-main #text{
+        width: 280px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .overview-resort .text,
+    .architecture .text,
+    .brand-story .text,
+    .service .text{
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    .list-service-item{
+        margin-left: 20px;
+    }
+
+}
+
+
+/*================================ Header của giới thiệu ========================== */
+
+
+#page-header {
+    background-image: url(images/gioi-thieu/pic_2.jpg);
+    width: 100%;
+    height:  80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.lopphu {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height:  80vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#page-header h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FFFFFF, #62A4F1, #7F4BEE, #9B72F2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    object-fit: cover;
+
+    z-index: 100;
+}
+
+#page-header p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 100;
+}
+
+
+
+
+
+/* ======================================= Giới thiệu end ============================ */
+
+
+
+
+
+
+
+
+
