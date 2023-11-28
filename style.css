@@ -860,7 +860,6 @@ body{
 
 #login a {
     float: right;
-    margin-bottom: 40px;
     color: #000000;
 }
 
@@ -894,18 +893,21 @@ body{
     .input-box {
         position: absolute;
         top: 140px;
-        width: 400px;
+        width: 330px;
         left: 50px;
         transition: 0.5s;
     }
 
     .social-icons {
-        top: 120px;
         left: 20%;
     }
 
-    .submit-button {
-        margin-top: 100px;
+    #sign-up .submit-button {
+        margin-top: 30px;
+    }
+
+    #login a {
+        margin-right: 60px;
     }
 }
 /* End dang nhap-dang ky */
