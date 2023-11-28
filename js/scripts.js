@@ -282,6 +282,60 @@ function f_dki() {
 // Hien Le( 2k3 gia roi gio tao ki nguc 2k5) =))
 // Start Gioi Thieu
 $(document).ready(function(){
+// ========================JS Footer Start===============================
+
+// Xử lí sự kiện mũi tên ở footer chạy ra vào
+    $(".js-linkggMap").hover(function(){
+        $(".js-goto-icon").css({"left" : "10px"});
+    }, function(){
+      $(".js-goto-icon").css({"left" : "0px"});
+  });
+
+
+    // Xử lí sự kiện ấn vào show list các menu của footer dạng mobile
+
+    function showItem(str){
+      if(screen.width >= 477) return;
+      $(str + " ~ div").toggle(500);
+      $(str + " i").toggleClass("fa-caret-right fa-caret-down");
+    }
+
+    
+    $(".show1" ).click(function(){                      
+        showItem(".show1");
+    });
+
+    $(".show2").click(function(){                     
+      showItem(".show2");
+    });
+
+    $(".show3").click(function(){                     
+      showItem(".show3");
+    });
+
+    $(".show4").click(function(){                     
+      showItem(".show4");
+    });
+
+    $(".show5").click(function(){                     
+      showItem(".show5");
+    });
+
+
+    // Fix lỗi khi show và close danh sách menu footer kéo màn hình rộng ra thì mất các list menu
+
+    $(window).resize(function(){
+      var width = $(window).width();
+      if(width >= 477){
+        $(".link-item").show();
+      }
+    });
+
+
+// ========================JS Footer End===============================
+
+
+    
 var text1 = "Với tiêu chí không những để vui mà còn là vì sức khỏe Hydrangea Resort có cả bãi xe đạp cho du khách thuê để chạy vòng quang đường núi ngắm nhìn vẻ đẹp hoang sơ ở nơi đây, ngoài ra còn có cả thuyền sup cho du khách có cơ hội ngăm nhìn hoàng hôn từ hồ nước.";
 var text2 = "Với đội ngũ dày dặn kinh nghiệm sẽ mang đến cho mọi người trải nghiệm thoải mái nhất khi đến với resort, tại đây có các dịch vụ như gội đầu dưỡng sinh, massage toàn thân, đặc biệt là có phòng xông hơi giúp du khách hài lòng về resort của chúng tôi.";
 var text3 = "Với thiết kế chuẩ Châu Âu sẽ mang lại cho du khách cảm giác sang trọng nhưng không kém phần lãng mạng. Đến với Hydrangea Resort đội ngũ đầu bếp có tay nghề và kinh nghiệm dồi dào sẽ mang lại cho du khách những món ăn có thể nói là Mĩ vị nhân gian.";
