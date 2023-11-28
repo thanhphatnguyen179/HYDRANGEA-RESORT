@@ -279,9 +279,6 @@ function f_dki() {
 
 // S O N 2k20 end
 
-// Hien Le( 2k3 gia roi gio tao ki nguc 2k5) =))
-// Start Gioi Thieu
-$(document).ready(function(){
 // ========================JS Footer Start===============================
 
 // Xử lí sự kiện mũi tên ở footer chạy ra vào
@@ -334,8 +331,9 @@ $(document).ready(function(){
 
 // ========================JS Footer End===============================
 
-
-    
+//Hien Le 2k7 Start
+//Gioi Thieu Start
+$(document).ready(function(){
 var text1 = "Với tiêu chí không những để vui mà còn là vì sức khỏe Hydrangea Resort có cả bãi xe đạp cho du khách thuê để chạy vòng quang đường núi ngắm nhìn vẻ đẹp hoang sơ ở nơi đây, ngoài ra còn có cả thuyền sup cho du khách có cơ hội ngăm nhìn hoàng hôn từ hồ nước.";
 var text2 = "Với đội ngũ dày dặn kinh nghiệm sẽ mang đến cho mọi người trải nghiệm thoải mái nhất khi đến với resort, tại đây có các dịch vụ như gội đầu dưỡng sinh, massage toàn thân, đặc biệt là có phòng xông hơi giúp du khách hài lòng về resort của chúng tôi.";
 var text3 = "Với thiết kế chuẩ Châu Âu sẽ mang lại cho du khách cảm giác sang trọng nhưng không kém phần lãng mạng. Đến với Hydrangea Resort đội ngũ đầu bếp có tay nghề và kinh nghiệm dồi dào sẽ mang lại cho du khách những món ăn có thể nói là Mĩ vị nhân gian.";
@@ -401,8 +399,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-
-
 $(".service-1").hover(function(){
   showMessage(text1);
 }, function(){
@@ -429,7 +425,8 @@ $(".service-4").hover(function(){
   closeMessage();
 });
 });
-// End Gioi Thieu
+//Gioi Thieu End
+//Hien Le 2k7 End 
 
 // Hoang Phuc starts
     // Lien He starts
