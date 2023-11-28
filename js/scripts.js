@@ -31,14 +31,9 @@ var roomList = {
     "photo": "images/san-pham/phong1-1.jpg"
   },
   "phong0002": {
-    "name": "Phòng Larose",
-    "price": 7991627,
-    "photo": "images/san-pham/phong2-1.jpg"
-  },
-  "phong0003": {
     "name": "Phòng Suie Junior",
     "price": 11100622,
-    "photo": "images/san-pham/phong3-1.jpg"
+    "photo": "images/san-pham/phong2-1.jpg"
   },
   "canho0001": {
     "name": "Larose Master - 2 Phòng Ngủ",
@@ -56,7 +51,6 @@ var roomList = {
     "photo": "images/san-pham/bietthu1-1.jpg"
   }
 };
-
 
 function addCart(code) {
   let number = parseInt(document.getElementById(code).value);
