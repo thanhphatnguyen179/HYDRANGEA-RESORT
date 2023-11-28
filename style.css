@@ -430,7 +430,7 @@ body{
     background-image: url('images/trang-chu/img-6.jpg');
 }
 
-.tc-slider #tc-log {
+.tc-slider .tc-log {
     position: relative;
     z-index: 4;
     float: right;
@@ -439,7 +439,7 @@ body{
     margin: 10px;
 }
 
-.tc-slider #tc-log a {
+.tc-slider .tc-log a {
     color: #ffffff;
     font-family: 'EB Garamond';
     font-size: larger;
@@ -447,7 +447,7 @@ body{
     background-color: #e8952f;
 }
 
-.tc-slider #tc-log a:hover {
+.tc-slider .tc-log a:hover {
     background-color: #dba764;
 }
 
@@ -532,7 +532,7 @@ body{
         z-index: 5;
     }
 
-    .tc-slider #tc-log {
+    .tc-slider .tc-log {
         top: 30px;
         right: 0;
         padding: 0px;
