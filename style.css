@@ -1071,15 +1071,6 @@ body{
 
 
 /* Phat 2k3 Starts*/
-:root{
-    --header-color: #abd641;
-    --body-color: #ffffff;
-    --footer-color: #7398d4;
-    --button-color:#65763a;
-    --button-hover-color:#7fa71c;
-    --text-color: #000000;
-}
-
 * {
     padding: 0;
     margin: 0;
