@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="lh_html">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
         
     </head>
 
-    <body>
+    <body class="lh_body">
 
         <div class="lh_back_ground">
             <div class="lh_box">
@@ -49,17 +49,20 @@
                             <td><textarea id="lh_details" rows="7" cols="50" type="text" name="details" placeholder="Ví dụ: Có dịch vụ dọn phòng không?" onchange="lh_contentf()" required></textarea></td>
                         </tr>
                     </table>
-                    <div class="button">
-                        <td><input type="submit" value="Gửi" onclick="lh_gui()"></td>
-                        <td><input type="reset" value="Huỷ"></td>
+                    <div>
+                        <td><button type="submit" value="Gửi" onclick="lh_gui()">Gửi</button></td>
+                        <td><button type="reset" value="Huỷ">Huỷ</button></td>
                     </div>
                 </form>
                 <br/>
-                <p class="social-icon">Hoặc liên hệ với chúng tôi thông qua các trang mạng xã hội
-                    <a target="_blank" href="https://www.facebook.com/"><img src="images/lien-he/facebookIcon.png"></a>
-                    <a target="_blank" href="https://www.youtube.com/"><img src="images/lien-he/youTubeIcon.png"></a>
-                    <a target="_blank" href="https://www.instagram.com/"><img src="images/lien-he/instagramIcon.png"></a>
-                </p>
+                <div class="social-icon-margin">
+                    <p class="social-icon">Hoặc liên hệ với chúng tôi thông qua các trang mạng xã hội
+                        <a target="_blank" href="https://www.facebook.com/"><img src="images/lien-he/facebookIcon.png"></a>
+                        <a target="_blank" href="https://www.youtube.com/"><img src="images/lien-he/youTubeIcon.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/"><img src="images/lien-he/instagramIcon.png"></a>
+                    </p>
+                </div>
+                
             </div>
         </div>
             
