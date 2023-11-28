@@ -1851,3 +1851,195 @@ section {
 /* Dich Vu CHinh End */
 /* Gioi Thieu End */
 /* Hien Le AKA guboiz 2k3 End  */
+
+
+
+
+
+
+
+/*============================================ Tin tức start ==========================================*/
+
+
+.new-title{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.new-item-img{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 5px;
+}
+
+.new-item{
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.new-item-content{
+    margin-left: 20px;
+    margin-top: 1%;
+}
+
+.new-item-content p{
+    width: 70%;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.new-item-content p a:hover{
+    font-weight: 600;
+    color: blue;
+}
+
+.new-item *{
+    margin-bottom: 10px;
+}
+
+.new-item a{
+    text-decoration: underline #0766AD;
+}
+
+.new-item .item-title{
+    display: inline-block;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.new-item1{
+    grid-area: newItem1;
+}
+
+.new-item2{
+    grid-area: newItem2;
+}
+
+.new-item3{
+    grid-area: newItem3;
+}
+
+.new-item4{
+    grid-area: newItem4;
+}
+
+.new-item5{
+    grid-area: newItem5;
+}
+
+.new-item6{
+    grid-area: newItem6;
+}
+
+.new-item7{
+    grid-area: newItem7;
+}
+
+.new-item8{
+    grid-area: newItem8;
+}
+
+.new-relax{
+    grid-area: newRelax;
+}
+
+.new-play{
+    grid-area: newPlay;
+}
+
+.new-meeting{
+    grid-area: newMeeting;
+}
+
+.new-gradent{
+    grid-area: newGradent;
+}
+
+.new-relax,
+.new-play,
+.new-meeting,
+.new-gradent{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.new-item-container{
+    display: grid;
+    grid-template-areas: "newRelax newRelax"
+                         "newItem1 newItem2"
+                         "newPlay newPlay"
+                         "newItem3 newItem4"
+                         "newMeeting newMeeting"
+                         "newItem5 newItem6"
+                         "newGradent newGradent"
+                         "newItem7 newItem8";
+}
+
+
+@media only screen and (max-width: 799px){
+    .new-item-container{
+        grid-template-areas: "newRelax"
+                             "newItem1"
+                             "newItem2"
+                             "newPlay"
+                             "newItem3"
+                             "newItem4"
+                             "newMeeting"
+                             "newItem5"
+                             "newItem6"
+                             "newGradent"
+                             "newItem7"
+                             "newItem8";
+    }
+
+    .new-item{
+        display: block;
+        margin-right: 40px;
+    }
+
+    .new-item-img{
+        height: 50vw;
+        width: 90vw;
+    }
+
+    .new-container{
+        font-size: 15px;
+    }
+
+    .new-item p{
+        width: 100%;
+    }
+
+    .item-title{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 20px;
+    }
+
+}
+
+
+/* ==============================================Tin tức end========================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
