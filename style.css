@@ -58,7 +58,7 @@ body{
     padding: 3% 5%;
     margin-bottom: 0;
     color: var(--text-color);
-    margin: 0 30%;
+    margin-left: 31%;
 }
 
 .lh_box p{
@@ -72,7 +72,7 @@ body{
 .lh_box .not-white{
     color: var(--header-color);
     background-color: var(--body-color);
-    width: 23rem;
+    width: 75%;
     border-radius: 1rem;;
     padding: 1rem 1rem;
     
@@ -87,11 +87,11 @@ body{
 }
 
 .lh_box .button{
-    margin-left: 76%;
+    margin-left: 75%;
 }
 
 .lh_box table input{
-    width: 12rem;
+    width: 50%;
     border-radius: 1rem;
     padding-left: 0.5rem;
     border: 1px solid var(--header-color);
@@ -101,6 +101,7 @@ body{
     border-radius: 0.5rem;
     padding-left: 0.5rem;
     border: 1px solid var(--header-color);
+    width: 100%;
 }
 
 .lh_box .social-icon img{
@@ -183,6 +184,140 @@ body{
 
 .tc_content .tc_container .item a i{
     color: var(--header-color);
+}
+
+@media (max-width: 799px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .lh_html{
+        font-size: 100%;
+    }
+    
+
+    .lh_box {
+        margin-left: auto;
+        margin-right: auto;
+        top: 5%;
+        
+        width: 67%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 2%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 0 3%;
+        overflow: hidden;
+    }
+
+    .lh_box .button{
+        margin-left: 73%;
+    }
+
+    #search-box {
+        display: flex;
+        background-color: var(--header-color);
+        width: 95%;
+        min-width: 0px ;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        justify-content: space-between;
+        transition: top 0.3s;
+        overflow: hidden;
+        margin: 0 auto;
+        z-index: 3;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .tc_content .tc_container {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0%;
+        column-gap: 4%;
+    }
+}
+
+@media (max-width: 477px){
+    .lh_html{
+        font-size: 80%;
+    }
+
+    .lh_box {
+        margin-left: 0;
+        margin-right: 0;
+        top: 5%;
+        
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 2%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 0 3%;
+        overflow: hidden;
+    }
+
+    .lh_box .button{
+        margin-left: 65%;
+    }
+
+    .lh_box table textarea{
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        border: 1px solid var(--header-color);
+        width: 85%;
+    }
+
+    .lh_box .not-white{
+        color: var(--header-color);
+        background-color: var(--body-color);
+        width: 70%;
+        border-radius: 1rem;;
+        padding: 1rem 1rem;
+        
+    }
+
+    .lh_box p{
+        padding-right: 3%;
+    }
+
+    #search-box .items{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+    }
+
+    #search-box .items:last-child{
+        width: 14%;
+    }
+
+    #search-box .items:last-child button{
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        color: var(--text-color);
+        background-color: var(--button-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .tc_content .tc_container {
+        display: block;
+        grid-template-columns: none;
+        gap: 5%;
+    }
 }
 /* Hoang Phuc ends*/
 
