@@ -487,6 +487,11 @@ body{
     display: none;
 }
 
+.dowload .qr-img{
+    height: 100px;
+    width: 100px;
+}
+
 
 @media only screen and (max-width: 1150px){
     .footer{
