@@ -259,6 +259,30 @@ function myFunction() {
 
 // End Responsive of Navigation
 
+// Start Log-in Sign-out
+
+function login(){
+  document.getElementById("login").style.left = "50px";
+  document.getElementById("sign-up").style.left = "750px";
+  document.getElementById("button-color").style.left = "0";
+}
+
+function signup(){
+  document.getElementById("login").style.left = "-400px";
+  document.getElementById("sign-up").style.left = "50px";
+  document.getElementById("button-color").style.left = "140px";
+}
+
+function f_dnhap() {
+  alert("Đăng nhập thành công!");
+}
+
+function f_dki() {
+  alert("Đăng ký tài khoản thành công!");
+}
+
+// Start Log-in Sign-out
+
 // S O N 2k20 end
 
 // Hien Le( 2k3 gia roi gio tao ki nguc 2k5) =))
