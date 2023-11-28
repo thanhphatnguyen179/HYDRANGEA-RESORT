@@ -122,11 +122,11 @@ function showCart(){
 
     var price = document.createElement("td");
     price.innerHTML = formatter.format(item.price);
-    price.style.textAlign = "right";
+    price.style.textAlign = "center";
 
     var total = document.createElement("td");
     total.innerHTML = formatter.format(item.price * qty);
-    total.style.textAlign = "right";
+    total.style.textAlign = "center";
     totalPreTax += item.price * qty;
 
     var bin = document.createElement("a");
