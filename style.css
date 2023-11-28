@@ -13,314 +13,6 @@ body{
     border: 0;
 }
 
-/* Hoang Phuc Starts*/
-.lh_box a:hover{
-    color: var(--button-hover-color);
-}
-
-.lh_box i{
-    color: var(--header-color);
-}
-
-.lh_back_ground {
-    top: 0;
-    left: 0;    
-    width: 100%;
-    height: 100%;
-    background-image: url(images/lien-he/anhNen.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-}
-
-.lh_box {
-    margin-left: auto;
-    margin-right: auto;
-    
-    width: 35%;
-    height: 90%;
-    border-radius: 10px;
-    position: relative;
-    margin-top: 2%;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-    padding: 0 3%;
-    overflow: hidden;
-}
-
-.lh_box #logo img{
-    position: absolute;
-    height: 13%;
-}
-
-.lh_box h1{
-    padding: 3% 5%;
-    margin-bottom: 0;
-    color: var(--text-color);
-    margin-left: 31%;
-}
-
-.lh_box p{
-    color: var(--text-color);
-}
-
-.lh_box a{
-    color: var(--text-color);
-}
-
-.lh_box .not-white{
-    color: var(--header-color);
-    background-color: var(--body-color);
-    width: 75%;
-    border-radius: 1rem;;
-    padding: 1rem 1rem;
-    
-}
-
-.lh_box .label-color{
-    background-color: var(--body-color);
-    border-radius: 1rem;
-    padding-left: 0.5rem;
-    width: 4.5rem;
-    color: var(--header-color);
-}
-
-.lh_box .button{
-    margin-left: 75%;
-}
-
-.lh_box table input{
-    width: 50%;
-    border-radius: 1rem;
-    padding-left: 0.5rem;
-    border: 1px solid var(--header-color);
-}
-
-.lh_box table textarea{
-    border-radius: 0.5rem;
-    padding-left: 0.5rem;
-    border: 1px solid var(--header-color);
-    width: 100%;
-}
-
-.lh_box .social-icon img{
-    width: 1rem;
-}
-
-#search-box {
-    display: flex;
-    background-color: var(--header-color);
-    width: 60vw;
-    min-width: 950px;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    justify-content: space-between;
-    transition: top 0.3s;
-    overflow: hidden;
-    margin: 0 auto;
-    z-index: 3;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 20vw;
-}
-
-#search-box .items{
-    display: flex;
-    flex-direction: column;
-    width: 23%;
-}
-
-#search-box .items p{
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-#search-box .items:last-child button{
-    margin-top: 1rem;
-    height: 70%;
-    width: 100%;
-    color: var(--text-color);
-    background-color: var(--button-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#search-box .items:last-child button:hover{
-    background-color: var(--button-hover-color);
-}
-
-.tc_content{
-    
-    padding: 1% 2%;
-    background-color: #e4f3b6;
-}
-
-.tc_content .tc_container {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4%;
-}
-
-.tc_content .tc_container img{
-    height: 75%;
-    width: 100%;
-}
-
-.tc_content .tc_container .item a{
-    color: black;
-    text-decoration: none;
-}
-
-.tc_content .tc_container .item a:hover{
-    color: var(--button-hover-color);
-}
-
-.tc_content .tc_container .item a i{
-    color: var(--header-color);
-}
-
-@media (max-width: 799px){
-    html{
-        font-size: 62.5%;
-    }
-
-    .lh_html{
-        font-size: 100%;
-    }
-    
-
-    .lh_box {
-        margin-left: auto;
-        margin-right: auto;
-        top: 5%;
-        
-        width: 67%;
-        height: 600px;
-        border-radius: 10px;
-        position: relative;
-        margin-top: 2%;
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .2);
-        backdrop-filter: blur(10px);
-        padding: 0 3%;
-        overflow: hidden;
-    }
-
-    .lh_box .button{
-        margin-left: 73%;
-    }
-
-    #search-box {
-        display: flex;
-        background-color: var(--header-color);
-        width: 95%;
-        min-width: 0px ;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        justify-content: space-between;
-        transition: top 0.3s;
-        overflow: hidden;
-        margin: 0 auto;
-        z-index: 3;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .tc_content .tc_container {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 0%;
-        column-gap: 4%;
-    }
-}
-
-@media (max-width: 477px){
-    .lh_html{
-        font-size: 80%;
-    }
-
-    .lh_box {
-        margin-left: 0;
-        margin-right: 0;
-        top: 5%;
-        
-        width: 100%;
-        height: 600px;
-        border-radius: 10px;
-        position: relative;
-        margin-top: 2%;
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .2);
-        backdrop-filter: blur(10px);
-        padding: 0 3%;
-        overflow: hidden;
-    }
-
-    .lh_box .button{
-        margin-left: 65%;
-    }
-
-    .lh_box table textarea{
-        border-radius: 0.5rem;
-        padding-left: 0.5rem;
-        border: 1px solid var(--header-color);
-        width: 85%;
-    }
-
-    .lh_box .not-white{
-        color: var(--header-color);
-        background-color: var(--body-color);
-        width: 70%;
-        border-radius: 1rem;;
-        padding: 1rem 1rem;
-        
-    }
-
-    .lh_box p{
-        padding-right: 3%;
-    }
-
-    #search-box .items{
-        display: flex;
-        flex-direction: column;
-        width: 28%;
-    }
-
-    #search-box .items:last-child{
-        width: 14%;
-    }
-
-    #search-box .items:last-child button{
-        margin-top: 0;
-        height: 100%;
-        width: 100%;
-        color: var(--text-color);
-        background-color: var(--button-color);
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-
-    .tc_content .tc_container {
-        display: block;
-        grid-template-columns: none;
-        gap: 5%;
-    }
-}
-/* Hoang Phuc ends*/
-
 /* S O N Starts*/
 /* Start CSS header and slider*/
 
@@ -2023,7 +1715,370 @@ section {
 
 /* ==============================================Tin tức end========================================= */
 
+/* Hoang Phuc Starts*/
 
+
+.lh_box a:hover{
+    color: var(--button-hover-color);
+}
+
+.lh_box i{
+    color: var(--header-color);
+}
+
+.lh_back_ground {
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-image: url(images/lien-he/anhNen.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.lh_box {
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 41%;
+    height: 90%;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 2%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    padding: 0 3%;
+    overflow: hidden;
+    
+}
+
+.lh_box #logo img{
+    position: absolute;
+    height: 13%;
+}
+
+.lh_box h1{
+    padding: 3% 5%;
+    margin-bottom: 8%;
+    color: var(--text-color);
+    margin-left: 31%;
+}
+
+.lh_box p{
+    color: var(--text-color);
+    margin-bottom: 2%;
+}
+
+.lh_box a{
+    color: var(--text-color);
+}
+
+.lh_box .not-white{
+    color: var(--header-color);
+    background-color: var(--body-color);
+    width: 85%;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    
+}
+
+.lh_box .label-color{
+    background-color: var(--body-color);
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    width: 5rem;
+    color: var(--header-color);
+}
+
+.lh_box button{
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+}
+
+.lh_box button:hover{
+    background-color: var(--header-color);
+    color: var(--text-color);
+}
+
+.lh_box button:nth-child(1){
+    margin-left: 70%;
+}
+
+.lh_box table input{
+    width: 50%;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+}
+
+.lh_box table textarea{
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--header-color);
+    width: 100%;
+}
+
+.lh_box .social-icon img{
+    width: 1rem;
+}
+
+.lh_box .social-icon-margin{
+    margin-top: 10%;
+}
+
+#search-box {
+    display: flex;
+    background-color: var(--header-color);
+    width: 60vw;
+    
+    padding: 1rem;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    transition: top 0.3s;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 20vw;
+}
+
+#search-box .items{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+#search-box .items p{
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#search-box .items:last-child button{
+    margin-top: 1rem;
+    height: 70%;
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-box .items:last-child button:hover{
+    background-color: var(--button-hover-color);
+}
+
+.tc_content{
+    
+    padding: 1% 2%;
+    background-color: #e4f3b6;
+}
+
+.tc_content .tc_container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+.tc_content .tc_container img{
+    height: 75%;
+    width: 100%;
+}
+
+.tc_content .tc_container .item a{
+    color: black;
+    text-decoration: none;
+}
+
+.tc_content .tc_container .item a:hover{
+    color: var(--button-hover-color);
+}
+
+.tc_content .tc_container .item a i{
+    color: var(--header-color);
+}
+
+@media (max-width: 1200px){
+    .lh_box {
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 50%;
+        height: 90%;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 2%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 0 3%;
+        overflow: hidden;
+        
+    }
+
+    #search-box {
+        display: flex;
+        background-color: var(--header-color);
+        width: 80vw;
+        
+        padding: 1rem;
+        border-radius: 0.5rem;
+        justify-content: space-between;
+        transition: top 0.3s;
+        overflow: hidden;
+        margin: 0 auto;
+        z-index: 3;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 10vw;
+    }
+}
+
+@media (max-width: 799px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .lh_body{
+        font-size: 160%;
+    }
+    
+
+    .lh_box {
+        margin-left: auto;
+        margin-right: auto;
+        top: 5%;
+        
+        width: 67%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 2%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 0 3%;
+        overflow: hidden;
+    }
+
+    .lh_box .button{
+        margin-left: 73%;
+    }
+
+    #search-box {
+        display: flex;
+        background-color: var(--header-color);
+        width: 100%;
+        min-width: 0px ;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        justify-content: space-between;
+        transition: top 0.3s;
+        overflow: hidden;
+        margin: 0 auto;
+        z-index: 3;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0vw;
+    }
+
+    .tc_content .tc_container {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0%;
+        column-gap: 4%;
+    }
+}
+
+@media (max-width: 477px){
+    .lh_body{
+        font-size: 145%;
+    }
+
+    .lh_box {
+        margin-left: 0;
+        margin-right: 0;
+        top: 5%;
+        
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 2%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(10px);
+        padding: 0 3%;
+        overflow: hidden;
+    }
+
+    .lh_box .button{
+        margin-left: 65%;
+    }
+
+    .lh_box table textarea{
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        border: 1px solid var(--header-color);
+        width: 85%;
+    }
+
+    .lh_box .not-white{
+        color: var(--header-color);
+        background-color: var(--body-color);
+        width: 70%;
+        border-radius: 1rem;;
+        padding: 1rem 1rem;
+        
+    }
+
+    .lh_box p{
+        padding-right: 3%;
+    }
+
+    #search-box .items{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+    }
+
+    #search-box .items:last-child{
+        width: 14%;
+    }
+
+    #search-box .items:last-child button{
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        color: var(--text-color);
+        background-color: var(--button-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .tc_content .tc_container {
+        display: block;
+        grid-template-columns: none;
+        gap: 5%;
+    }
+}
+/* Hoang Phuc ends*/
 
 
 
