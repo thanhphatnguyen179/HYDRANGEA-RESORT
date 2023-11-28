@@ -367,14 +367,33 @@ body{
     }
 }
 
+@media (max-width: 799px) {
+    #tc-header #tc-header-container .navi-left,
+    #tc-header #tc-header-container .navi-right {
+        margin-top: 30px;
+        width: 40%;
+    }
+
+    #tc-header #tc-header-container #tc-logo {
+        left: 43%;
+    }
+}
+
 @media (max-width: 477px) {
+
+    #search-box {
+        width: 100vw;
+        min-width: 0px;
+    }
+
     .navi-left a, .navi-right a {display: none;}
 
     #tc-header #tc-header-container .icon {
+        font-size: 20px;
         float: left;
         display: block;
         position: relative;
-        top: 30px;
+        top: 25px;
         z-index: 5;
     }
 
@@ -387,12 +406,12 @@ body{
 
     #tc-header #tc-header-container #tc-logo {
         left: 39%;
-        bottom: 30px;
+        bottom: 15px;
     }
 
     #tc-header #tc-header-container #tc-logo img {
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     .myNavi .navi-left.responsive,
@@ -413,6 +432,7 @@ body{
         padding: 0;
         width: 100%;
         transition: 0.5s;
+        margin-top: 0;
     }
 
     .navi-left.responsive a,
@@ -431,6 +451,7 @@ body{
 
     #tc-header #tc-header-container .myNavi {
         width: 100vw;
+        margin-top: 30px;
     }
 
     #tc-header #tc-header-container .navi-left a:hover,
