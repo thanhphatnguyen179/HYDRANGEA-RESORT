@@ -962,7 +962,7 @@ body{
     height: 550px;
     border-radius: 10px;
     position: relative;
-    margin: 8% auto;
+    margin: 6% auto;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
@@ -1035,7 +1035,7 @@ body{
     left: 750px;
 }
 
-.social-icons {
+#sign-up .social-icons {
     position: relative;
     top: 20px;
     left: 20%;
@@ -1046,11 +1046,9 @@ body{
     color: #000000;
 }
 
-.social-icons .icon {
-    margin: auto 12px;
-    font-size: 24px;
-    color: #31882b;
-    color: var(--button-color);
+#sign-up .social-icons img {
+    margin: auto 6px;
+    width: 1.5rem;
 }
 
 .form-box #logo img{
