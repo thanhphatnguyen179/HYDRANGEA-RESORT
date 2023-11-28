@@ -22,17 +22,17 @@
                 <div id="logo">
                     <a href="trang-chu.html"><img src="images/trang-chu/logo.png"></a>
                 </div>
-                <form id="login" class="input-box">               
+                <form id="login" class="input-box" action="/trang-chu.html" onsubmit="f_dnhap()">               
                     <input type="text" class="input-field" placeholder="Tên tài khoản" required>                   
                     <input type="password" class="input-field" placeholder="Mật khẩu" required><br><br>
                     <label class="check-box"><input type="checkbox"><span> Ghi nhớ cho lần đăng nhập sau</span></label><br><br>
                     <a href="#">Bạn quên mật khẩu?</a>
-                    <button type="submit" class="submit-button">ĐĂNG NHẬP</button>
+                    <button type="submit" class="submit-button dnhap">ĐĂNG NHẬP</button>
                 </form>
-                <form id="sign-up" class="input-box">
-                    <input type="email" class="input-field" placeholder="Email" required>
-                    <input type="text" class="input-field" placeholder="Tên tài khoản" required>                   
-                    <input type="password" class="input-field" placeholder="Mật khẩu" required>
+                <form id="sign-up" class="input-box" onsubmit="f_dki()">
+                    <input id="email" type="email" class="input-field" placeholder="Email" required>
+                    <input id="tk" type="text" class="input-field" placeholder="Tên tài khoản" required>                   
+                    <input id="mk" type="password" class="input-field" placeholder="Mật khẩu" required>
                     <div class="social-icons">Hoặc
                         <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
@@ -44,24 +44,7 @@
             </div>
             
         </div>
-        <script>
-            var a = document.getElementById("login");
-            var b = document.getElementById("sign-up");
-            var c = document.getElementById("button-color");
-
-            function login(){
-            a.style.left = "50px";
-            b.style.left = "750px";
-            c.style.left = "0";
-            }
-
-            function signup(){
-            a.style.left = "-400px";
-            b.style.left = "50px";
-            c.style.left = "140px";
-            }
-
-        </script>
+        <script src="js/scripts.js"></script>
     </main>
     <footer></footer>
 </body>
