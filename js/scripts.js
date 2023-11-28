@@ -376,3 +376,65 @@ $(".service-4").hover(function(){
 });
 });
 // End Gioi Thieu
+
+// Hoang Phuc starts
+    // Lien He starts
+function lh_namef(){
+    let lh_name = document.getElementById("lh_name").value;
+    return lh_name;
+}
+
+function lh_emailf(){
+    let lh_email = document.getElementById("lh_email").value;
+    return lh_email;
+}
+
+function lh_contentf(){
+    let lh_content = document.getElementById("lh_details").value;
+    return lh_content;
+}
+
+function lh_gui(){
+    if((lh_namef() != "") && (lh_emailf() != "") && (lh_contentf() != ""))
+        alert("Câu hỏi của bạn đã được ghi lại!");
+}
+    // Lien He ends
+    // Trang Chu starts
+function tc_ngayThue(){
+    let ngayThue = document.getElementById("tc_ngayThue").value;
+    let toDay = new Date();
+    toDay = toDay.getFullYear()+"-"+(toDay.getMonth()+1)+"-"+toDay.getDate();
+    if(ngayThue<toDay){
+        alert("Không thể đặt phòng ở quá khứ!");
+        document.getElementById("tc_ngayThue").value="";
+    }
+    else
+        return ngayThue;
+}
+
+function tc_ngayTra(){
+    let ngayTra = document.getElementById("tc_ngayTra").value;
+    if(tc_ngayThue()>ngayTra){
+        alert("Không thể trả phòng trước khi thuê phòng!");
+        document.getElementById("tc_ngayTra").value="";
+    }
+    else
+        return ngayTra;
+}
+
+function tc_soNguoi(){
+    let soNguoi = document.getElementById("tc_soNguoi").value;
+        if(soNguoi < 1){
+            alert("Hãy nhập lại số người thuê phòng!");
+            document.getElementById("tc_soNguoi").value="";
+        }
+        else
+            return soNguoi;
+}
+
+function tc_seacrh(){
+    if((tc_ngayThue() != "") && (tc_ngayTra() != "") && (tc_soNguoi() != ""))
+        window.location="san-pham.html";
+}
+    // Trang Chu ends
+// Hoang Phuc ends
