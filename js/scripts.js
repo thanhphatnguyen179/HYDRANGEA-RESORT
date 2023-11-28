@@ -341,89 +341,62 @@ var text4 = "Một ly cocktail kết thúc cho một ngày dài là một trải
 var speed = 10;
 
 var i = 0;
-var check = true;
+    var check = true;
 
-function typeWriter(txt) {
-  if (i < txt.length && check == true) {
-    document.getElementById("text").innerHTML += txt.charAt(i);
-    ++i;
-    setTimeout(function(){
-      typeWriter(txt);
-    }, speed);
-  }else{
-    i = 0;
-  }
-}
-
-function showMessage(txt){
-  check = true;
-  $("#text").css({"display" : "block", "border" : "1px solid", "background-color" : "var(--header-color)"});
-  $("#text").animate(typeWriter(txt));   
-}
-
-function closeMessage(){
-  check = false;
-  document.getElementById("text").innerHTML = "";
-  $("#text").css({"display" : "block", "border" : "0px solid", "background-color" : "#e4f3b6"});
-}
-
-var slideIndex = 0;
-showDivs(slideIndex);
-
-carousel();
-
-function plusDiv(n) {
-  showDivs(slideIndex += n);
-}
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slide");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+    function typeWriter(txt) {
+      if (i < txt.length && check == true) {
+        document.getElementById("text").innerHTML += txt.charAt(i);
+        ++i;
+        setTimeout(function(){
+          typeWriter(txt);
+        }, speed);
+      }else{
+        i = 0;
+      }
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-  }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-$(".service-1").hover(function(){
-  showMessage(text1);
-}, function(){
-  closeMessage();
-});
 
 
-$(".service-2").hover(function(){
-  showMessage(text2);
-}, function(){
-  closeMessage();
-});
 
-$(".service-3").hover(function(){
-  showMessage(text3);
-}, function(){
-  closeMessage();
-});
+    function showMessage(txt){
+      check = true;
+      $("#text").css({"display" : "block", "border" : "1px solid", "background-color" : "var(--header-color)"});
+      $("#text").animate(typeWriter(txt));   
+    }
+
+    function closeMessage(){
+      check = false;
+      document.getElementById("text").innerHTML = "";
+      $("#text").css({"display" : "block", "border" : "0px solid", "background-color" : "#e4f3b6"});
+    }
 
 
-$(".service-4").hover(function(){
-  showMessage(text4);
-}, function(){
-  closeMessage();
-});
+
+    $(".service-1").hover(function(){
+      showMessage(text1);
+    }, function(){
+      closeMessage();
+    });
+
+
+    $(".service-2").hover(function(){
+      showMessage(text2);
+    }, function(){
+      closeMessage();
+    });
+
+    $(".service-3").hover(function(){
+      showMessage(text3);
+    }, function(){
+      closeMessage();
+    });
+
+
+    $(".service-4").hover(function(){
+      showMessage(text4);
+    }, function(){
+      closeMessage();
+    });
+
 });
 //Gioi Thieu End
 //Hien Le 2k7 End 
